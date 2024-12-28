@@ -1,4 +1,4 @@
-function ContactIcon()
+function MailIcon()
 {
     return (
         <>
@@ -9,4 +9,4 @@ function ContactIcon()
     )
 }
 
-export default ContactIcon
+export default MailIcon

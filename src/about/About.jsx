@@ -1,9 +1,9 @@
 import './About.css'
 import './AboutImages.css'
-import ContactIcon from './assets/icons/contact'
-import ArrowIcon from './assets/icons/arrow'
-import ResumeIcon from './assets/icons/resume'
-import iconsImage from './assets/images/icons.png'
+import MailIcon from '../assets/icons/mail'
+import ArrowIcon from '../assets/icons/arrow'
+import ResumeIcon from '../assets/icons/resume'
+import iconsImage from '../assets/images/icons.png'
 
 function About()
 {
@@ -48,7 +48,7 @@ function About()
                         <span>Resume</span>
                     </a>
                     <button >
-                        <ContactIcon />
+                        <MailIcon />
                         Contact Me
                     </button>
                 </div>

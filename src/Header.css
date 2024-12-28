@@ -1,8 +1,18 @@
 .header {
   width: 100%;
-  max-width: 90%;
   display: flex;
   padding: 2rem;
+  /* background: transparent;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 100; */
+}
+
+.headerContent {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
 }
 
 .profilePic {

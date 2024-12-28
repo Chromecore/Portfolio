@@ -98,8 +98,16 @@
     }
 }
 
-/* Width Scaling */
+/* Scaling */
 @media only screen and (max-width: 1600px) {
+    .images {
+        .projectImage {
+            --scale: 0.7;
+        }
+    }
+}
+
+@media only screen and (max-height: 900px) {
     .images {
         .projectImage {
             --scale: 0.7;
@@ -115,27 +123,18 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .images {
-        .projectImage {
-            --scale: 0.4;
-        }
-    }
-}
-
-/* Height Scaling */
-@media only screen and (max-height: 900px) {
-    .images {
-        .projectImage {
-            --scale: 0.7;
-        }
-    }
-}
-
 @media only screen and (max-height: 700px) {
     .images {
         .projectImage {
             --scale: 0.5;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .images {
+        .projectImage {
+            --scale: 0.4;
         }
     }
 }
