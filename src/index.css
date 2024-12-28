@@ -48,6 +48,7 @@
 
   transition: all 0.3s ease;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 a {
@@ -60,7 +61,6 @@ body {
   margin: 0;
   display: flex;
   width: 100%;
-  min-height: 100vh;
 }
 
 button {

@@ -11,6 +11,7 @@ function App()
     <div>
       <Header />
       <About />
+      <div className='spacer' />
     </div>
   )
 }
