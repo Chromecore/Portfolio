@@ -98,13 +98,41 @@
     }
 }
 
+.resume {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    color: var(--secondaryLight);
+    font-size: 1.25rem;
+    font-weight: 800;
+    transition: color 0.3s ease;
+
+    svg {
+        height: 1.3rem;
+
+        path {
+            transition: fill 0.3s ease;
+            fill: var(--secondaryDark);
+        }
+    }
+}
+
+.resume:hover {
+    transform: scale(1.1);
+    color: var(--primaryLight);
+
+    path {
+        fill: var(--primaryLight);
+    }
+}
+
 .explore {
     display: flex;
     align-items: center;
     gap: 1rem;
     position: absolute;
-    left: 0;
-    bottom: 100px;
+    left: -30px;
+    bottom: 80px;
     rotate: -90deg;
     color: var(--secondaryDark);
     font-size: 2rem;
@@ -126,5 +154,15 @@
 
     .intro {
         width: 100%;
+    }
+
+    .introContent button {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .resume {
+        display: none;
     }
 }

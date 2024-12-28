@@ -47,6 +47,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   transition: all 0.3s ease;
+  overflow-x: hidden;
 }
 
 a {
@@ -58,7 +59,7 @@ a {
 body {
   margin: 0;
   display: flex;
-  min-width: 320px;
+  width: 100%;
   min-height: 100vh;
 }
 
