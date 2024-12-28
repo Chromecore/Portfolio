@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+}
+
+.profilePic {
+  height: 6rem;
+  padding-right: 1.5rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.profilePic:hover {
+  filter: drop-shadow(0 0 1rem var(--secondaryColor));
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+
+  h1 {
+    display: flex;
+    column-gap: 0.5rem;
+    font-weight: 900;
+    color: var(--secondaryLight);
+    text-align: start;
+    margin: 0;
+
+    span {
+      color: var(--primaryLight);
+    }
+  }
+}
+
+nav {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  color: var(--secondaryLight);
+  font-size: 1.5rem;
+  font-weight: 800;
+  transition: color 0.3s ease;
+
+  svg {
+    height: 1.3rem;
+
+    path {
+      transition: fill 0.3s ease;
+      fill: var(--secondaryDark);
+    }
+  }
+}
+
+.navItem:hover {
+  transform: scale(1.1);
+  color: var(--primaryLight);
+
+  path {
+    fill: var(--primaryLight);
+  }
+}

@@ -1,40 +1,17 @@
 import { useState } from 'react'
-import profilePicture from './assets/profile-picture.png'
 import './App.css'
+import Header from './Header.jsx'
+import About from './About.jsx'
 
 function App()
 {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="">
-          <img src={profilePicture} className="profilePic" alt="Profile Picture" />
-        </a>
-        <div>
-          <h1>Hey,</h1>
-          <h1>I'm Tayin</h1>
-        </div>
-      </div>
-
-
-
-
-
-
-      {/* <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-    </>
+    <div>
+      <Header />
+      <About />
+    </div>
   )
 }
 

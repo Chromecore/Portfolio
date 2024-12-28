@@ -1,0 +1,130 @@
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+.images {
+    width: 50%;
+}
+
+.intro {
+    width: 50%;
+    display: grid;
+
+    div {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            width: 390px;
+            margin-bottom: 125px;
+        }
+    }
+}
+
+.introContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 900;
+
+    h2 {
+        font-weight: 900;
+        font-size: 3rem;
+        margin: 0;
+
+        background: var(--primaryColor);
+        background: linear-gradient(to right, var(--primaryColor) 0%, var(--secondaryColor) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 20rem;
+        font-size: 1.25rem;
+        color: var(--secondaryLight);
+        text-align: center;
+
+        span {
+            color: var(--secondaryDark);
+            font-weight: 100;
+            font-size: 5rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        background: var(--primaryColor);
+        background: linear-gradient(to right, var(--primaryColor) 0%, var(--secondaryColor) 100%);
+        font-weight: 900;
+        color: var(--primaryDark);
+        font-size: 1.25rem;
+        border-radius: 10rem;
+        padding: 0.4rem 0.8rem;
+        margin-top: 3rem;
+
+        svg {
+            height: 1.25rem;
+
+            path {
+                fill: var(--primaryDark);
+            }
+        }
+    }
+
+    button:hover,
+    button:focus,
+    button:focus-visible {
+        background: var(--primaryColor);
+    }
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    rotate: -90deg;
+    color: var(--secondaryDark);
+    font-size: 2rem;
+
+    svg {
+        rotate: 90deg;
+        height: 2rem;
+
+        path {
+            fill: var(--secondaryDark)
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .images {
+        display: none;
+    }
+
+    .intro {
+        width: 100%;
+    }
+}

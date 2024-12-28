@@ -1,52 +1,63 @@
 @font-face {
   font-family: Lexend;
-  src: url('assets/Lexend-Black.ttf') format('truetype');
+  src: url('assets/fonts/Lexend-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: Lexend;
-  src: url('assets/Lexend-SemiBold.ttf') format('truetype');
+  src: url('assets/fonts/Lexend-SemiBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: Lexend;
-  src: url('assets/Lexend-Regular.ttf') format('truetype');
+  src: url('assets/fonts/Lexend-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
+@font-face {
+  font-family: Lexend;
+  src: url('assets/fonts/Lexend-ExtraLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
 :root {
+  --primaryLight: #E6E6EC;
+  --secondaryLight: #6E88A6;
+  --primaryDark: #0E1012;
+  --secondaryDark: #252B33;
+  --primaryColor: #63EC89;
+  --secondaryColor: #63ECDC;
+
   font-family: Lexend, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  line-height: 1.5;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background: #0E1012;
-  background: linear-gradient(137deg, #0E1012 0%, #000000 100%);
+  /* color-scheme: light dark; */
+  background: var(--primaryDark);
+  background: linear-gradient(135deg, var(--primaryDark) 0%, black 100%);
+  background-attachment: fixed;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  transition: all 0.3s ease;
 }
 
 a {
-  color: #63EC89;
   text-decoration: inherit;
-}
-
-a:hover {
-  color: #63EC89;
+  color: var(--primaryLight);
+  cursor: pointer;
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -54,22 +65,12 @@ body {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
 
-button:hover {
-  border-color: #63EC89;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -82,4 +83,22 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track,
+body::-webkit-scrollbar-corner {
+  background: var(--primaryDark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondaryLight);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primaryLight);
 }
