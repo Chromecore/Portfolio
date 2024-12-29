@@ -53,7 +53,7 @@ function Skills()
             <div className='categoryList'>
                 {
                     categories.map((category) =>
-                        <Category category={category} />
+                        <Category category={category} key={category.name} />
                     )
                 }
             </div>
@@ -70,7 +70,7 @@ function Category({ category })
             <div className="skillsList">
                 {
                     category.skills.map((skill) =>
-                        <Skill skill={skill} />
+                        <Skill skill={skill} key={skill.name} />
                     )
                 }
             </div>

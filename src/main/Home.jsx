@@ -9,7 +9,7 @@ function Home({ success, error })
     return (
         <div>
             <Header />
-            <About />
+            {/* <About /> */}
             <div className='spacer' />
             <Skills />
             <div className='spacer' />
