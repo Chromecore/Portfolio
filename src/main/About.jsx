@@ -8,12 +8,12 @@ import iconsImage from '../assets/images/icons.png'
 function About()
 {
     const projectImages = [
-        { id: 1, link: '' },
-        { id: 2, link: '' },
-        { id: 3, link: '' },
-        { id: 4, link: '' },
-        { id: 5, link: '' },
-        { id: 6, link: '' }
+        { id: 1, link: '/' },
+        { id: 2, link: '/' },
+        { id: 3, link: '/' },
+        { id: 4, link: '/' },
+        { id: 5, link: '/' },
+        { id: 6, link: '/' }
     ]
 
     return (
@@ -41,7 +41,7 @@ function About()
                         <h2>Games/Software</h2>
                         <p>
                             <span>&#123;</span>
-                            I program and create games, apps, websites
+                            I program and design games, apps, websites
                             <span>&#125;</span></p>
                         <a href='https://drive.google.com/file/d/1AmegWO79QVZejVwYmzNuLmxkF4PsZZrg/view?usp=drive_link'
                             target='blank' className='resume'>

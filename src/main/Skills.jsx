@@ -1,5 +1,5 @@
 import React from "react";
-import GamesIcon from '../assets/icons/Games';
+import GamesIcon from '../assets/icons/games';
 import WebIcon from '../assets/icons/web';
 import AppsIcon from '../assets/icons/apps';
 import GeneralIcon from '../assets/icons/general';
