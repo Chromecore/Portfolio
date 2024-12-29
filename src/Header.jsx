@@ -6,21 +6,22 @@ import SkillsIcon from './assets/icons/skills'
 import ProjectsIcon from './assets/icons/projects'
 import MailIcon from './assets/icons/mail'
 import ResumeIcon from './assets/icons/resume'
+import baseUrl from './BaseData'
 
 function Header()
 {
   const [count, setCount] = useState(0)
 
   const navItems = [
-    { name: 'About', icon: <AboutIcon />, link: '' },
-    { name: 'Skills', icon: <SkillsIcon />, link: '' },
-    { name: 'Projects', icon: <ProjectsIcon />, link: '' },
-    { name: 'Contact', icon: <MailIcon />, link: '' },
+    { name: 'About', icon: <AboutIcon />, link: '#about' },
+    { name: 'Skills', icon: <SkillsIcon />, link: '#skills' },
+    { name: 'Projects', icon: <ProjectsIcon />, link: '#projects' },
+    { name: 'Contact', icon: <MailIcon />, link: '#contact' },
     { name: 'Resume', icon: <ResumeIcon />, target: 'blank', link: 'https://drive.google.com/file/d/1AmegWO79QVZejVwYmzNuLmxkF4PsZZrg/view?usp=drive_link' }
   ]
 
   return (
-    <div className='header'>
+    <div className='header' id='about'>
       <div className='headerContent'>
         {/* Picture */}
         <a href="">

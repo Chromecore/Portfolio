@@ -3,27 +3,32 @@ import ItchIcon from './assets/icons/itch'
 import MailIcon from './assets/icons/mail'
 import LinkedInIcon from './assets/icons/linkedIn'
 import GithubIcon from './assets/icons/github'
+import baseUrl from './BaseData'
 
-function Contact()
+const socials = [
+    { id: 1, icon: <ItchIcon />, link: 'https://chromecore.itch.io/' },
+    { id: 2, icon: <MailIcon />, link: 'mailto:tayin.wallace@outlook.com' },
+    { id: 3, icon: <LinkedInIcon />, link: 'https://www.linkedin.com/in/tayinwallace' },
+    { id: 4, icon: <GithubIcon />, link: 'https://github.com/Chromecore' }
+]
+
+function Contact({ success, error })
 {
-    const socials = [
-        { id: 1, icon: <ItchIcon />, link: 'google.com' },
-        { id: 2, icon: <MailIcon />, link: 'google.com' },
-        { id: 3, icon: <LinkedInIcon />, link: 'google.com' },
-        { id: 4, icon: <GithubIcon />, link: 'google.com' }
-    ]
-
     return (
-        <div className='contact'>
+        <div className='contact' id="contact">
             <p className='letsTalk'>Let's Talk!</p>
             <div className='formSocials'>
-                <form onSubmit={OnContactSubmit}>
-                    <Input name='name' label='Name' type='text' error='Missing Name' />
-                    <Input name='email' label='Email Address' type='email' error='Invalid Email' />
-                    <Input name='message' label='Message' type='text' error='Missing Message' />
-                    <button type='submit'>Send Message</button>
-                    <p className='successful'>Successfully Sent</p>
+                <form action='https://submit-form.com/JGuUfg2AC'>
+                    <input type="hidden" name="_append" value="false" />
+                    <input type="hidden" name="_redirect" value={`${baseUrl}/success#contact`} />
+                    <input type="hidden" name="_error" value={`${baseUrl}/error#contact`} />
 
+                    <Input name='name' labelText='Name' type='text' />
+                    <Input name='email' labelText='Email Address' type='email' />
+                    <Input name='message' labelText='Message' type='text' textArea={true} />
+                    <button type='submit'>Send Message</button>
+                    <p className='successful' hidden={success == undefined}>Successfully Sent</p>
+                    <p className='error' hidden={error == undefined}>Error sending message</p>
                 </form>
                 <div className='socials'>
                     {
@@ -40,23 +45,19 @@ function Contact()
     )
 }
 
-function Input({ type, name, label, error })
+function Input({ type, name, labelText, textArea })
 {
     return (
         <div className='input'>
-            <label htmlFor={name}>{label}</label>
+            <label htmlFor={name} className='required'>{labelText}</label>
             <div>
-                <textarea name={name} type={type} />
-                <p className='errorMessage'>{error}</p>
+                {
+                    textArea == true ? <textArea name={name} type={type} required /> :
+                        <input name={name} type={type} required />
+                }
             </div>
         </div>
     );
-}
-
-function OnContactSubmit(e)
-{
-    e.preventDefault();
-    const form = e.target;
 }
 
 export default Contact

@@ -54,6 +54,12 @@ form {
             margin-left: 0.5rem;
         }
 
+        label.required:after {
+            content: "*";
+            color: var(--errorColor);
+        }
+
+        input,
         textarea {
             resize: none;
             box-sizing: border-box;
@@ -69,9 +75,11 @@ form {
             z-index: 1;
         }
 
+        input::-webkit-scrollbar,
         textarea::-webkit-scrollbar {
             height: 0rem;
         }
+
     }
 
     .input:last-of-type {
@@ -83,16 +91,6 @@ form {
             white-space: unset;
             overflow-y: unset;
         }
-    }
-
-    .errorMessage {
-        position: absolute;
-        top: 100%;
-        font-size: 1rem;
-        right: 0;
-        margin: 0;
-        color: var(--errorColor);
-        z-index: 2;
     }
 
     button {
@@ -116,6 +114,12 @@ form {
 
     .successful {
         color: var(--primaryColor);
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .error {
+        color: var(--errorColor);
         font-size: 1rem;
         margin: 0;
     }

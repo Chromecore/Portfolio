@@ -47,10 +47,10 @@ function About()
                         <ResumeIcon />
                         <span>Resume</span>
                     </a>
-                    <button >
+                    <a className='contactMe' href='#contact'>
                         <MailIcon />
                         Contact Me
-                    </button>
+                    </a>
                 </div>
             </div>
 

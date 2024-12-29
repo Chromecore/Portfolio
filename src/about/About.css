@@ -66,7 +66,7 @@
         }
     }
 
-    button {
+    .contactMe {
         display: flex;
         align-items: center;
         background: var(--primaryColor);
@@ -87,9 +87,9 @@
         }
     }
 
-    button:hover,
-    button:focus,
-    button:focus-visible {
+    .contactMe:hover,
+    .contactMe:focus,
+    .contactMe:focus-visible {
         background: var(--primaryLight);
     }
 }
