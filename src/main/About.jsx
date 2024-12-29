@@ -57,8 +57,8 @@ function About()
 
                 {/* Explore Arrow */}
                 <div className='explore'>
+                    <p>Explore</p>
                     <ArrowIcon />
-                    Explore
                 </div>
             </div>
         </div>

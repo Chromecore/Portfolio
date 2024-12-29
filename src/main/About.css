@@ -135,22 +135,28 @@
 
 .explore {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
     position: absolute;
-    left: -40px;
-    bottom: 80px;
-    rotate: -90deg;
-    color: var(--secondaryDark);
-    font-size: 2rem;
+    left: 0px;
+    bottom: 0px;
+    width: 2rem;
+    margin: 0 0 10px 10px;
 
     svg {
-        rotate: 90deg;
         height: 2rem;
 
         path {
             fill: var(--secondaryDark)
         }
+    }
+
+    p {
+        color: var(--secondaryDark);
+        font-size: 2rem;
+        rotate: -90deg;
+        margin: 0;
     }
 }
 
@@ -163,7 +169,7 @@
         margin-top: 0;
 
         h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
     }
 }

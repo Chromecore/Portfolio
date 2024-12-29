@@ -1,8 +1,20 @@
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+        text-align: center;
+        color: var(--primaryLight);
+        font-weight: 800;
+        font-size: 3rem;
+    }
+}
+
 .categoryList {
-    display: grid;
+    display: flex;
     justify-content: space-evenly;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 5rem;
     width: 100%;
     max-width: 1000px;
 
@@ -41,17 +53,16 @@
             align-items: center;
             justify-content: space-evenly;
             color: var(--secondaryLight);
-            height: 80px;
             width: 80px;
+            aspect-ratio: 1/1;
             font-weight: 400;
             font-size: 1rem;
             background-color: var(--primaryDark);
             border-radius: 0.5rem;
-            padding: 0.4rem;
+            padding: 0.2rem;
 
             img {
-                height: 4rem;
-
+                width: 60%;
             }
 
             p {
@@ -62,22 +73,10 @@
     }
 }
 
-.skillsSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h2 {
-        text-align: center;
-        color: var(--primaryLight);
-        font-weight: 800;
-        font-size: 3rem;
-    }
-}
-
 @media only screen and (max-width: 900px) {
     .categoryList {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 2rem;
 
         .category:not(:last-child) {
             border-right: none;
@@ -85,9 +84,22 @@
 
         .skillsList {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 0.5rem;
             row-gap: 1rem;
+
+            .skill {
+                position: relative;
+                left: calc(15%/2);
+                width: calc(85% - 0.2rem);
+                height: unset;
+                aspect-ratio: 1 / 1;
+                padding: 0.1rem;
+
+                p {
+                    font-size: 70%;
+                }
+            }
         }
     }
 }

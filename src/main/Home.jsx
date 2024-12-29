@@ -7,7 +7,7 @@ import Skills from './Skills.jsx'
 function Home({ success, error })
 {
     return (
-        <div>
+        <div className='home'>
             <Header />
             <About />
             <div className='spacer' />
