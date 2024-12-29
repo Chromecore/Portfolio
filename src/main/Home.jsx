@@ -8,8 +8,8 @@ function Home({ success, error })
 {
     return (
         <div>
-            <Header />
-            {/* <About /> */}
+            {/* <Header /> */}
+            <About />
             <div className='spacer' />
             <Skills />
             <div className='spacer' />

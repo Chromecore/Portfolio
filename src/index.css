@@ -26,6 +26,10 @@
   font-style: normal;
 }
 
+html {
+  width: 100%;
+}
+
 :root {
   --primaryLight: #E6E6EC;
   --secondaryLight: #6E88A6;
