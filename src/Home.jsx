@@ -1,6 +1,6 @@
 import Header from './Header.jsx'
 import About from './about/About.jsx'
-import Contact from './contact.jsx'
+import Contact from './Contact.jsx'
 
 function Home({ success, error })
 {
