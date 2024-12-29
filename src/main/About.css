@@ -1,7 +1,14 @@
+.aboutParent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
 .about {
     display: flex;
-    justify-content: space-evenly;
-    height: 70vh;
+    justify-content: center;
+    width: 1600px;
 }
 
 .intro {

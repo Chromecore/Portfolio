@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import './App.css'
-import Home from './Home'
+import Home from './main/Home'
 import NotFound from './NotFound'
 
 function App()

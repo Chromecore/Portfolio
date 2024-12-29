@@ -1,9 +1,9 @@
 import './Contact.css'
-import ItchIcon from './assets/icons/itch'
-import MailIcon from './assets/icons/mail'
-import LinkedInIcon from './assets/icons/linkedIn'
-import GithubIcon from './assets/icons/github'
-import baseUrl from './BaseData'
+import ItchIcon from '../assets/icons/itch'
+import MailIcon from '../assets/icons/mail'
+import LinkedInIcon from '../assets/icons/linkedIn'
+import GithubIcon from '../assets/icons/github'
+import baseUrl from '../BaseData'
 
 const socials = [
     { id: 1, icon: <ItchIcon />, link: 'https://chromecore.itch.io/' },
@@ -16,7 +16,7 @@ function Contact({ success, error })
 {
     return (
         <div className='contact' id="contact">
-            <p className='letsTalk'>Let's Talk!</p>
+            <h2 className='letsTalk'>Let's Talk!</h2>
             <div className='formSocials'>
                 <form action='https://submit-form.com/JGuUfg2AC'>
                     <input type="hidden" name="_append" value="false" />
@@ -52,8 +52,8 @@ function Input({ type, name, labelText, textArea })
             <label htmlFor={name} className='required'>{labelText}</label>
             <div>
                 {
-                    textArea == true ? <textArea name={name} type={type} required /> :
-                        <input name={name} type={type} required />
+                    textArea == true ? <textarea name={name} id={name} type={type} required /> :
+                        <input id={name} name={name} type={type} required />
                 }
             </div>
         </div>

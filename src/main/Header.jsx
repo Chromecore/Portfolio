@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import profilePicture from './assets/images/profile-picture.png'
+import profilePicture from '../assets/images/profile-picture.png'
 import './Header.css'
-import AboutIcon from './assets/icons/about'
-import SkillsIcon from './assets/icons/skills'
-import ProjectsIcon from './assets/icons/projects'
-import MailIcon from './assets/icons/mail'
-import ResumeIcon from './assets/icons/resume'
-import baseUrl from './BaseData'
+import AboutIcon from '../assets/icons/about'
+import SkillsIcon from '../assets/icons/skills'
+import ProjectsIcon from '../assets/icons/projects'
+import MailIcon from '../assets/icons/mail'
+import ResumeIcon from '../assets/icons/resume'
 
 function Header()
 {
