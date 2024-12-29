@@ -57,9 +57,11 @@
             aspect-ratio: 1/1;
             font-weight: 400;
             font-size: 1rem;
-            background-color: var(--primaryDark);
+            background-color: var(--secondaryDark);
             border-radius: 0.5rem;
             padding: 0.2rem;
+            transition: transform 0.3s ease;
+            transition: background-color 0.3s ease;
 
             img {
                 width: 60%;
@@ -69,6 +71,11 @@
                 margin: 0;
                 text-align: center;
             }
+        }
+
+        .skill:hover {
+            background-color: var(--primaryDark);
+            scale: 1.05;
         }
     }
 }
@@ -85,13 +92,15 @@
         .skillsList {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 0.5rem;
             row-gap: 1rem;
+            width: 80%;
+            max-width: 300px;
 
             .skill {
                 position: relative;
-                left: calc(15%/2);
-                width: calc(85% - 0.2rem);
+                left: 5%;
+                width: calc(90% - 0.2rem);
+                max-width: 80px;
                 height: unset;
                 aspect-ratio: 1 / 1;
                 padding: 0.1rem;

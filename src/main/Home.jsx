@@ -3,6 +3,7 @@ import Header from './Header.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
 import Skills from './Skills.jsx'
+import Projects from './Projects.jsx'
 
 function Home({ success, error })
 {
@@ -12,6 +13,8 @@ function Home({ success, error })
             <About />
             <div className='spacer' />
             <Skills />
+            <div className='spacer' />
+            <Projects />
             <div className='spacer' />
             <Contact success={success} error={error} />
         </div>
