@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  max-width: Calc(100% - 4rem);
   display: flex;
   padding: 2rem;
   /* background: transparent;
@@ -53,12 +54,6 @@ nav {
   gap: 3rem;
 }
 
-@media only screen and (max-width: 900px) {
-  nav {
-    display: none;
-  }
-}
-
 .navItem {
   display: flex;
   align-items: center;
@@ -86,5 +81,11 @@ nav {
 
   path {
     fill: var(--primaryLight);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    display: none;
   }
 }

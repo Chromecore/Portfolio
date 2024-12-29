@@ -159,8 +159,12 @@
         width: 100%;
     }
 
-    .introContent button {
+    .introContent {
         margin-top: 0;
+
+        h2 {
+            font-size: 3rem;
+        }
     }
 }
 
