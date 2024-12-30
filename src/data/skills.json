@@ -1,0 +1,108 @@
+{
+    "skills": [
+        {
+            "name": "Web",
+            "skills": [
+                {
+                    "name": "HTML",
+                    "id": "html"
+                },
+                {
+                    "name": "CSS",
+                    "id": "css"
+                },
+                {
+                    "name": "JavaScript",
+                    "id": "javaScript"
+                },
+                {
+                    "name": "React",
+                    "id": "react"
+                },
+                {
+                    "name": "Tailwind",
+                    "id": "tailwind"
+                }
+            ]
+        },
+        {
+            "name": "Games",
+            "skills": [
+                {
+                    "name": "Unity",
+                    "id": "unity"
+                },
+                {
+                    "name": "C#",
+                    "id": "csharp"
+                },
+                {
+                    "name": "GameMaker",
+                    "id": "gameMaker"
+                },
+                {
+                    "name": "World Building",
+                    "id": "world"
+                },
+                {
+                    "name": "Unity Netcode",
+                    "id": "unity"
+                },
+                {
+                    "name": "Blender",
+                    "id": "blender"
+                },
+                {
+                    "name": "Game Design",
+                    "id": "design"
+                }
+            ]
+        },
+        {
+            "name": "Apps",
+            "skills": [
+                {
+                    "name": "Flutter",
+                    "id": "flutter"
+                },
+                {
+                    "name": "Dart",
+                    "id": "dart"
+                }
+            ]
+        },
+        {
+            "name": "General",
+            "skills": [
+                {
+                    "name": "Git",
+                    "id": "git"
+                },
+                {
+                    "name": "Photoshop",
+                    "id": "photoshop"
+                },
+                {
+                    "name": "Math/Physics",
+                    "id": "math"
+                },
+                {
+                    "name": "Java",
+                    "id": "java"
+                },
+                {
+                    "name": "Python",
+                    "id": "python"
+                },
+                {
+                    "name": "My SQL",
+                    "id": "mysql"
+                },
+                {
+                    "name": "C++",
+                    "id": "cpp"
+                }
+            ]
+        }
+    ]
+}

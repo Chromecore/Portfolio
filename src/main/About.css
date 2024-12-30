@@ -109,8 +109,7 @@
     color: var(--secondaryLight);
     font-size: 1.25rem;
     font-weight: 800;
-    transition: color 0.3s ease;
-    transition: transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 
     svg {
         height: 1.3rem;
@@ -182,6 +181,10 @@
 
         h2 {
             font-size: 2.5rem;
+        }
+
+        .contactMe {
+            margin: 0;
         }
     }
 }

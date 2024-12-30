@@ -5,27 +5,27 @@ import ArrowIcon from '../assets/icons/arrow'
 import ResumeIcon from '../assets/icons/resume'
 import iconsImage from '../assets/images/icons.png'
 
+const projectIDs = [
+    'ignitionArena',
+    'hazardMiner',
+    'budgetized',
+    'stellarWinds',
+    'pigments',
+    'theFlipSide'
+]
+
 function About()
 {
-    const projectImages = [
-        { id: 1, link: '/' },
-        { id: 2, link: '/' },
-        { id: 3, link: '/' },
-        { id: 4, link: '/' },
-        { id: 5, link: '/' },
-        { id: 6, link: '/' }
-    ]
-
     return (
         <div className='aboutParent'>
             <div className='about'>
                 {/* Images */}
                 <div className='images'>
                     {
-                        projectImages.map((image) =>
-                            <div className={`projectImage`} key={image.id}>
-                                <a href={image.link} className={`image${image.id}`}>
-                                    <img src={`images/projectImage${image.id}.png`} alt={`Project Image ${image.id}`} />
+                        projectIDs.map((id, index) =>
+                            <div className='projectImage' key={index}>
+                                <a href={`/${id}`} className={`image${index}`}>
+                                    <img src={`projects/${id}/01.png`} alt={`Image of ${id}`} />
                                 </a>
                             </div>
                         )

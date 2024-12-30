@@ -1,0 +1,74 @@
+{
+    "projects": [
+        {
+            "name": "Games",
+            "projects": [
+                {
+                    "name": "Ignition Arena",
+                    "id": "ignitionArena",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                },
+                {
+                    "name": "Hazard Miner",
+                    "id": "hazardMiner",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                },
+                {
+                    "name": "The Flip Side",
+                    "id": "theFlipSide",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                },
+                {
+                    "name": "Beamdown",
+                    "id": "beamdown",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                },
+                {
+                    "name": "Pigments",
+                    "id": "pigments",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                },
+                {
+                    "name": "Stellar Winds",
+                    "id": "stellarWinds",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                },
+                {
+                    "name": "Grapple Side Scroller",
+                    "id": "grappleSideScroller",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                }
+            ]
+        },
+        {
+            "name": "Software",
+            "projects": [
+                {
+                    "name": "Budgetized",
+                    "id": "budgetized",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                },
+                {
+                    "name": "Space Generator",
+                    "id": "spaceGenerator",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                },
+                {
+                    "name": "Web Projects",
+                    "id": "webProjects",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "projects": [
+                {
+                    "name": "Nexus - Worldbuilding",
+                    "id": "nexusWorldBuilding",
+                    "description": "A project created for a traditional game development course at the University of Utah"
+                }
+            ]
+        }
+    ]
+}
