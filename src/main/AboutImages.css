@@ -48,7 +48,7 @@
 
     .image0 {
         width: 352px;
-        height: 339px;
+        height: 315px;
         z-index: 2;
         top: calc(-30px * var(--scale) + var(--offsetY));
         left: calc(-90px * var(--scale) + var(--offsetX));

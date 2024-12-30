@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import profilePicture from '../assets/images/profile-picture.png'
+import profilePicture from '../assets/images/profilePicture.png'
 import './Header.css'
 import AboutIcon from '../assets/icons/about'
 import SkillsIcon from '../assets/icons/skills'
