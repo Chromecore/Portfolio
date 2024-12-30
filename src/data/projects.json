@@ -6,37 +6,37 @@
                 {
                     "name": "Ignition Arena",
                     "id": "ignitionArena",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "An online multiplayer, topdown space arena shooter with ship building and flight mechanics published on steam."
                 },
                 {
                     "name": "Hazard Miner",
                     "id": "hazardMiner",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "A 1-4 player card game where you have to balance safty and greed to gather as many resources as possible."
                 },
                 {
                     "name": "The Flip Side",
                     "id": "theFlipSide",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "A game where you flip between two mirrored worlds to fight enemies and solve puzzels, made by a team of 8."
                 },
                 {
                     "name": "Beamdown",
                     "id": "beamdown",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "A boss rush, action game focused on combat where you play as a robot clearing worlds of enemies. Made by a team of 30."
                 },
                 {
                     "name": "Pigments",
                     "id": "pigments",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "A game jam puzzel-platformer made in 48 hours where you switch, merge, and split colored pigments to solve puzzels."
                 },
                 {
                     "name": "Stellar Winds",
                     "id": "stellarWinds",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "A long term project with miniature space exploration, realistic based physics, and proceduarlly generated 3D planets."
                 },
                 {
                     "name": "Grapple Side Scroller",
                     "id": "grappleSideScroller",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "A short level design prototype created for a university course where you use a grapple hook to travers quickly through a level."
                 }
             ]
         },
@@ -46,27 +46,22 @@
                 {
                     "name": "Budgetized",
                     "id": "budgetized",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "An IOS app published on the app store to help manage finances through budgets, categories, and accounts."
                 },
                 {
                     "name": "Space Generator",
                     "id": "spaceGenerator",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "A web generator used to create randomly generated solar systems, stars, planets, and moons."
                 },
                 {
-                    "name": "Web Projects",
-                    "id": "webProjects",
-                    "description": "A project created for a traditional game development course at the University of Utah"
-                }
-            ]
-        },
-        {
-            "name": "other",
-            "projects": [
+                    "name": "Portfolio Website",
+                    "id": "portfolio",
+                    "description": "My porfolio website (this site) created over multiple iterations using different tools."
+                },
                 {
                     "name": "Nexus - Worldbuilding",
                     "id": "nexusWorldBuilding",
-                    "description": "A project created for a traditional game development course at the University of Utah"
+                    "description": "An ongoing project where I am collecting data about worldbuilding topics ranging from stars and planets to life and technology."
                 }
             ]
         }

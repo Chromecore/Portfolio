@@ -6,12 +6,12 @@ import ResumeIcon from '../assets/icons/resume'
 import iconsImage from '../assets/images/icons.png'
 
 const projectIDs = [
-    'ignitionArena',
     'hazardMiner',
+    'ignitionArena',
     'budgetized',
     'stellarWinds',
+    'theFlipSide',
     'pigments',
-    'theFlipSide'
 ]
 
 function About()

@@ -1,6 +1,15 @@
 import React from "react";
 import './Projects.css'
 import projectdata from '../data/projects.json';
+import GamesIcon from '../assets/icons/games';
+import GeneralIcon from '../assets/icons/general';
+import OtherIcon from '../assets/icons/other';
+
+const iconMap = {
+    "Games": <GamesIcon />,
+    "Software": <GeneralIcon />,
+    "Other": <OtherIcon />,
+};
 
 function Projects()
 {
@@ -18,11 +27,21 @@ function Projects()
     )
 }
 
+function DynamicIcon({ name })
+{
+    const icon = iconMap[name];
+    if (!icon) return null;
+    return icon;
+}
+
 function Category({ category })
 {
     return (
         <div className='category'>
-            <h3>{category.name}</h3>
+            <div className="title">
+                <DynamicIcon name={category.name} />
+                <h3>{category.name}</h3>
+            </div>
             <div className="projectList">
                 {
                     category.projects.map((project, index) =>
@@ -37,16 +56,18 @@ function Category({ category })
 function Project({ project })
 {
     return (
-        <a className="project" href={`/${project.id}`}>
-            <div className="imageHolder">
-                <img src={`projects/${project.id}/01.png`}></img>
-            </div>
-            <h4 className="title">{project.name}</h4>
-            <p className="description">{project.description}</p>
-            <div className="button">
-                Check It Out
-            </div>
-        </a>
+        <div>
+            <a className="project" href={`/${project.id}`}>
+                <div className="imageHolder">
+                    <img src={`projects/${project.id}/01.png`}></img>
+                </div>
+                <h4 className="title">{project.name}</h4>
+                <p className="description">{project.description}</p>
+                <div className="button">
+                    Check It Out
+                </div>
+            </a>
+        </div>
     );
 };
 

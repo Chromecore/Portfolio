@@ -32,12 +32,7 @@ function Skills()
 function DynamicIcon({ name })
 {
     const icon = iconMap[name];
-
-    if (!icon)
-    {
-        return null;
-    }
-
+    if (!icon) return null;
     return icon;
 }
 
