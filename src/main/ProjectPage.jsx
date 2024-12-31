@@ -44,19 +44,22 @@ function ProjectPage()
                         </ul>
                         <h2>Tools</h2>
                         <div className="toolsList">
-                            <img src='icons/photoshop.png' />
-                            <img src='icons/csharp.png' />
-                            <img src='icons/unity.png' />
-                            <img src='icons/blender.png' />
-                            <img src='icons/git.png' />
+                            {
+                                project.tools.map((tool, index) => (
+                                    <img src={`icons/${tool}.png`} key={index} alt={`Icon of ${tool}`} />
+                                ))
+                            }
                         </div>
                         <h2>Challenges</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur fermentum elit vitae auctor. Sed eu augue ac ipsum varius consequat. Morbi risus nunc, laoreet a tortor vel, ullamcorper feugiat enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In elementum purus a arcu condimentum feugiat. Nullam at posuere dui, vitae efficitur nisl. Morbi sit amet nulla turpis. Integer id est est. Morbi vel placerat arcu, nec tincidunt tortor. Morbi vestibulum tristique vulputate. Phasellus consectetur, sapien eu rhoncus egestas, leo lectus finibus mauris, id maximus velit nibh a ipsum.</p>
                     </div>
                     <div className='screenshots'>
-                        <img src={`projects/${project.id}/01.png`} />
-                        <img src={`Test1.png`} />
-                        <img src={`Test2.png`} />
+                        {
+                            project.screenshots.map((i, index) => (
+                                <img src={`projects/${project.id}/screenshots/${i}.jpg`} key={index}
+                                    alt={`Screenshot number ${index} of ${project.name}`} />
+                            ))
+                        }
                     </div>
                 </div>
             </div>

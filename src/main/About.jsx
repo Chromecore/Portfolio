@@ -25,7 +25,7 @@ function About()
                         projectIDs.map((id, index) =>
                             <div className='projectImage' key={index}>
                                 <a href={`/${id}`} className={`image${index}`}>
-                                    <img src={`projects/${id}/01.png`} alt={`Image of ${id}`} />
+                                    <img src={`projects/${id}/primary.jpg`} alt={`Image of ${id}`} />
                                 </a>
                             </div>
                         )

@@ -55,6 +55,10 @@
             flex-direction: column;
             align-items: center;
         }
+
+        .projectListSpacer {
+            display: none;
+        }
     }
 }
 
@@ -87,12 +91,9 @@
                 margin-bottom: 20px;
             }
 
-            .project:first-child {
-                margin-left: 100%;
-            }
-
-            div:last-child {
-                margin-right: 100%;
+            .projectListSpacer {
+                display: unset;
+                margin-left: 50%;
             }
         }
 

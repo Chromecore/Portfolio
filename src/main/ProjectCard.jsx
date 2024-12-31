@@ -7,13 +7,17 @@ function ProjectCard({ project, linkToActual })
             <a className="project" href={linkToActual ? project.link : `/${project.id}`}
                 target={linkToActual ? "_blank" : ""}>
                 <div className="imageHolder">
-                    <img src={`projects/${project.id}/01.png`}></img>
+                    <img src={`projects/${project.id}/primary.jpg`}></img>
                 </div>
                 <h4 className="title">{project.name}</h4>
                 <p className="description">{project.description}</p>
-                <div className="button">
-                    {linkToActual ? 'Link To Game' : 'Check It Out'}
-                </div>
+                {
+                    linkToActual && !project.link ?
+                        null :
+                        <div className="button">
+                            {linkToActual ? 'Link To Game' : 'Check It Out'}
+                        </div>
+                }
             </a>
         </div>
     );

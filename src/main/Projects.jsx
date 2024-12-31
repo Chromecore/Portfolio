@@ -44,11 +44,13 @@ function Category({ category })
                 <h3>{category.name}</h3>
             </div>
             <div className="projectList">
+                <div className="projectListSpacer"></div>
                 {
                     category.projects.map((project, index) =>
                         <ProjectCard project={project} key={index} />
                     )
                 }
+                <div className="projectListSpacer"></div>
             </div>
         </div>
     );
