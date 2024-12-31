@@ -6,7 +6,8 @@
                 {
                     "name": "Ignition Arena",
                     "id": "ignitionArena",
-                    "description": "An online multiplayer, topdown space arena shooter with ship building and flight mechanics published on steam."
+                    "description": "An online multiplayer, topdown space arena shooter with ship building and flight mechanics published on steam.",
+                    "link": "https://store.steampowered.com/app/3228760/Ignition_Arena/"
                 },
                 {
                     "name": "Hazard Miner",

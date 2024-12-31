@@ -9,8 +9,6 @@ import ResumeIcon from '../assets/icons/resume'
 
 function Header()
 {
-  const [count, setCount] = useState(0)
-
   const navItems = [
     { name: 'About', icon: <AboutIcon />, link: '#about' },
     { name: 'Skills', icon: <SkillsIcon />, link: '#skills' },
@@ -20,7 +18,7 @@ function Header()
   ]
 
   return (
-    <div className='header' id='about'>
+    <header id='about'>
       <div className='headerContent'>
         {/* Picture */}
         <a href="">
@@ -45,7 +43,7 @@ function Header()
           }
         </nav>
       </div>
-    </div>
+    </header>
   )
 }
 

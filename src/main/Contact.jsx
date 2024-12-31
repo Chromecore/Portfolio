@@ -40,7 +40,6 @@ function Contact({ success, error })
                     }
                 </div>
             </div>
-            <p className='theEnd'>The End</p>
         </div >
     )
 }

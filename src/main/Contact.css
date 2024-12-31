@@ -12,12 +12,6 @@
     margin-bottom: 3rem;
 }
 
-.theEnd {
-    color: var(--secondaryLight);
-    font-size: 1.5rem;
-    margin: 5rem 0 2rem 0;
-}
-
 .formSocials {
     display: flex;
     justify-content: center;
