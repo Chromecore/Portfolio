@@ -57,24 +57,21 @@ function ProjectPage()
                             }
                         </div>
                         {
-                            project.challenges && <>
-                                <h2>Challenges</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur fermentum elit vitae auctor. Sed eu augue ac ipsum varius consequat. Morbi risus nunc, laoreet a tortor vel, ullamcorper feugiat enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In elementum purus a arcu condimentum feugiat. Nullam at posuere dui, vitae efficitur nisl. Morbi sit amet nulla turpis. Integer id est est. Morbi vel placerat arcu, nec tincidunt tortor. Morbi vestibulum tristique vulputate. Phasellus consectetur, sapien eu rhoncus egestas, leo lectus finibus mauris, id maximus velit nibh a ipsum.</p>
-
-                            </>
-                        }
-                        {
-                            project.challenges && <>
-                                <h2>Challenges</h2>
-                                <p>{project.challenges}</p>
-                            </>
+                            project.sections.map((section, index) => (
+                                <div key={index}>
+                                    <h2>{section.title}</h2>
+                                    <p>{section.body}</p>
+                                </div>
+                            ))
                         }
                     </div>
                     <div className='screenshots'>
                         {
                             project.screenshots.map((i, index) => (
-                                <img src={`projects/${project.id}/screenshots/${i}.jpg`} key={index}
-                                    alt={`Screenshot number ${index} of ${project.name}`} />
+                                <div>
+                                    <img src={`projects/${project.id}/screenshots/${i}.jpg`} key={index}
+                                        alt={`Screenshot number ${index} of ${project.name}`} />
+                                </div>
                             ))
                         }
                     </div>

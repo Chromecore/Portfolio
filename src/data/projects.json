@@ -8,9 +8,15 @@
                     "id": "ignitionArena",
                     "description": "An online multiplayer, topdown space arena shooter with ship building and flight mechanics published on steam.",
                     "descriptionLong": "",
-                    "challenges": "",
+                    "duration": "8 months",
                     "link": "https://store.steampowered.com/app/3228760/Ignition_Arena",
-                    "screenshots": [],
+                    "screenshots": [
+                        2,
+                        3,
+                        1,
+                        4,
+                        5
+                    ],
                     "credits": [
                         "Tayin Wallace - Systems Engineer",
                         "Taylor Dabrowski - Producer",
@@ -26,6 +32,12 @@
                         "git",
                         "github",
                         "jira"
+                    ],
+                    "sections": [
+                        {
+                            "title": "Challenges",
+                            "body": "test"
+                        }
                     ]
                 },
                 {
@@ -33,23 +45,28 @@
                     "id": "hazardMiner",
                     "description": "A 1-4 player card game where you have to balance safty and greed to gather as many resources as possible.",
                     "descriptionLong": "",
-                    "challenges": "",
-                    "link": "https://store.steampowered.com/app/3228760/Ignition_Arena",
-                    "screenshots": [],
+                    "duration": "8 months",
+                    "link": "https://www.thegamecrafter.com/games/hazard-miner",
+                    "screenshots": [
+                        1,
+                        2,
+                        3
+                    ],
                     "credits": [
-                        "Tayin Wallace"
+                        "Tayin Wallace - Sole Developer"
                     ],
                     "tools": [
                         "midjourney",
                         "photoshop"
-                    ]
+                    ],
+                    "sections": []
                 },
                 {
                     "name": "The Flip Side",
                     "id": "theFlipSide",
                     "description": "A game where you flip between two mirrored worlds to fight enemies and solve puzzels, made by a team of 8.",
                     "descriptionLong": "The Flip Side is a puzzle game where you must flip between two worlds to solve puzzles by moving objects around and fighting enemies. It is a fun, short experience created by 8 people for a University course.",
-                    "challenges": "",
+                    "duration": "3 months",
                     "link": "https://chromecore.itch.io/the-flip-side",
                     "screenshots": [
                         1,
@@ -73,16 +90,48 @@
                         "photoshop",
                         "git",
                         "github"
-                    ]
+                    ],
+                    "sections": []
+                },
+                {
+                    "name": "Stellar Winds",
+                    "id": "stellarWinds",
+                    "description": "A long term project with miniature space exploration, realistic based physics, and proceduarlly generated 3D planets.",
+                    "descriptionLong": "",
+                    "duration": "2 years",
+                    "link": "https://chromecore.itch.io/stellar-winds",
+                    "screenshots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ],
+                    "credits": [
+                        "Tayin Wallace - Sole Developer"
+                    ],
+                    "tools": [
+                        "unity",
+                        "csharp",
+                        "photoshop",
+                        "blender"
+                    ],
+                    "sections": []
                 },
                 {
                     "name": "Beamdown",
                     "id": "beamdown",
                     "description": "A boss rush, action game focused on combat where you play as a robot clearing worlds of enemies. Made by a team of 30.",
                     "descriptionLong": "",
-                    "challenges": "",
+                    "duration": "on going",
                     "link": "",
-                    "screenshots": [],
+                    "screenshots": [
+                        3,
+                        1,
+                        2
+                    ],
                     "credits": [
                         "Tayin Wallace - Lead / Engineer",
                         "29 others in art/engineering/design/audio"
@@ -95,59 +144,53 @@
                         "git",
                         "github",
                         "jira"
-                    ]
+                    ],
+                    "sections": []
                 },
                 {
                     "name": "Pigments",
                     "id": "pigments",
                     "description": "A game jam puzzel-platformer made in 48 hours where you switch, merge, and split colored pigments to solve puzzels.",
                     "descriptionLong": "",
-                    "challenges": "",
+                    "duration": "48 hours",
                     "link": "https://chromecore.itch.io/pigments",
-                    "screenshots": [],
+                    "screenshots": [
+                        2,
+                        1,
+                        4,
+                        3
+                    ],
                     "credits": [
-                        "Tayin Wallace"
+                        "Tayin Wallace - Sole Developer"
                     ],
                     "tools": [
                         "unity",
                         "csharp",
                         "photoshop"
-                    ]
-                },
-                {
-                    "name": "Stellar Winds",
-                    "id": "stellarWinds",
-                    "description": "A long term project with miniature space exploration, realistic based physics, and proceduarlly generated 3D planets.",
-                    "descriptionLong": "",
-                    "challenges": "",
-                    "link": "https://chromecore.itch.io/stellar-winds",
-                    "screenshots": [],
-                    "credits": [
-                        "Tayin Wallace"
                     ],
-                    "tools": [
-                        "unity",
-                        "csharp",
-                        "photoshop",
-                        "blender"
-                    ]
+                    "sections": []
                 },
                 {
                     "name": "Grapple Side Scroller",
                     "id": "grappleSideScroller",
                     "description": "A short level design prototype created for a university course where you use a grapple hook to travers quickly through a level.",
                     "descriptionLong": "",
-                    "challenges": "",
+                    "duration": "1 week",
                     "link": "https://chromecore.itch.io/side-scroller-level-design-project",
-                    "screenshots": [],
+                    "screenshots": [
+                        1,
+                        2,
+                        3
+                    ],
                     "credits": [
-                        "Tayin Wallace"
+                        "Tayin Wallace - Sole Developer"
                     ],
                     "tools": [
                         "unity",
                         "csharp",
                         "photoshop"
-                    ]
+                    ],
+                    "sections": []
                 }
             ]
         },
@@ -159,45 +202,58 @@
                     "id": "budgetized",
                     "description": "An IOS app published on the app store to help manage finances through budgets, categories, and accounts.",
                     "descriptionLong": "",
-                    "challenges": "",
+                    "duration": "3 months",
                     "link": "https://apps.apple.com/us/app/budgetized/id1658923604",
-                    "screenshots": [],
+                    "screenshots": [
+                        1,
+                        2
+                    ],
                     "credits": [
-                        "Tayin Wallace"
+                        "Tayin Wallace - Sole Developer"
                     ],
                     "tools": [
                         "dart",
                         "flutter",
                         "figma",
                         "photoshop"
-                    ]
+                    ],
+                    "sections": []
                 },
                 {
                     "name": "Space Generator",
                     "id": "spaceGenerator",
                     "description": "A web generator used to create randomly generated solar systems, stars, planets, and moons.",
                     "descriptionLong": "",
-                    "challenges": "",
+                    "duration": "1 month",
                     "link": "https://chromecore.itch.io/space-generator",
-                    "screenshots": [],
+                    "screenshots": [
+                        1,
+                        2,
+                        3
+                    ],
                     "credits": [
-                        "Tayin Wallace"
+                        "Tayin Wallace - Sole Developer"
                     ],
                     "tools": [
                         "unity",
                         "csharp"
-                    ]
+                    ],
+                    "sections": []
                 },
                 {
                     "name": "Portfolio Website",
                     "id": "portfolio",
                     "description": "My porfolio website (this site) created over multiple iterations using different tools.",
                     "descriptionLong": "",
-                    "challenges": "",
+                    "duration": "1 week",
                     "link": "",
-                    "screenshots": [],
+                    "screenshots": [
+                        1,
+                        2,
+                        3
+                    ],
                     "credits": [
-                        "Tayin Wallace"
+                        "Tayin Wallace - Sole Developer"
                     ],
                     "tools": [
                         "react",
@@ -208,22 +264,29 @@
                         "figma",
                         "git",
                         "github"
-                    ]
+                    ],
+                    "sections": []
                 },
                 {
                     "name": "Nexus - Worldbuilding",
                     "id": "nexusWorldBuilding",
                     "description": "An ongoing project where I am collecting data about worldbuilding topics ranging from stars and planets to life and technology.",
                     "descriptionLong": "",
-                    "challenges": "",
+                    "duration": "on going",
                     "link": "",
-                    "screenshots": [],
+                    "screenshots": [
+                        1,
+                        2,
+                        3,
+                        4
+                    ],
                     "credits": [
-                        "Tayin Wallace"
+                        "Tayin Wallace - Sole Developer"
                     ],
                     "tools": [
                         "notion"
-                    ]
+                    ],
+                    "sections": []
                 }
             ]
         }

@@ -21,7 +21,7 @@ function Header()
     <header id='about'>
       <div className='headerContent'>
         {/* Picture */}
-        <a href="">
+        <a href="/">
           <img src={profilePicture} className="profilePic" alt="Profile Picture" />
         </a>
 

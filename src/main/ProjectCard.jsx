@@ -9,7 +9,10 @@ function ProjectCard({ project, linkToActual })
                 <div className="imageHolder">
                     <img src={`projects/${project.id}/primary.jpg`}></img>
                 </div>
-                <h4 className="title">{project.name}</h4>
+                <h4 className="title">
+                    {project.name}
+                    <p className='duration'>{project.duration}</p>
+                </h4>
                 <p className="description">{project.description}</p>
                 {
                     linkToActual && !project.link ?

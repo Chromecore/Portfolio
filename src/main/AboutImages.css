@@ -48,50 +48,44 @@
 
     .image0 {
         width: 352px;
-        height: 315px;
         z-index: 2;
         top: calc(-30px * var(--scale) + var(--offsetY));
         left: calc(-90px * var(--scale) + var(--offsetX));
     }
 
     .image1 {
-        width: 450px;
-        height: 386px;
+        width: 650px;
         z-index: 1;
         top: calc(-120px * var(--scale) + var(--offsetY));
         left: calc(240px * var(--scale) + var(--offsetX));
     }
 
     .image2 {
-        width: 400px;
-        height: 400px;
-        z-index: 1;
-        top: calc(225px * var(--scale) + var(--offsetY));
-        left: calc(-160px * var(--scale) + var(--offsetX));
+        width: 200px;
+        z-index: 2;
+        top: calc(280px * var(--scale) + var(--offsetY));
+        left: calc(150px * var(--scale) + var(--offsetX));
     }
 
     .image3 {
-        width: 270px;
-        height: 178px;
+        width: 370px;
         z-index: 3;
-        top: calc(220px * var(--scale) + var(--offsetY));
-        left: calc(90px * var(--scale) + var(--offsetX));
+        top: calc(200px * var(--scale) + var(--offsetY));
+        left: calc(-160px * var(--scale) + var(--offsetX));
     }
 
     .image4 {
-        width: 352px;
-        height: 284px;
+        width: 400px;
         z-index: 0;
         top: calc(170px * var(--scale) + var(--offsetY));
-        left: calc(350px * var(--scale) + var(--offsetX));
+        left: calc(430px * var(--scale) + var(--offsetX));
     }
 
     .image5 {
         width: 200px;
-        height: 200px;
-        z-index: 0;
+        z-index: 4;
         top: calc(340px * var(--scale) + var(--offsetY));
-        left: calc(320px * var(--scale) + var(--offsetX));
+        left: calc(0px * var(--scale) + var(--offsetX));
     }
 }
 
