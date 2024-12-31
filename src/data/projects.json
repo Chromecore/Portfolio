@@ -7,8 +7,18 @@
                     "name": "Ignition Arena",
                     "id": "ignitionArena",
                     "description": "An online multiplayer, topdown space arena shooter with ship building and flight mechanics published on steam.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "https://store.steampowered.com/app/3228760/Ignition_Arena",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace - Systems Engineer",
+                        "Taylor Dabrowski - Producer",
+                        "Cam Knigh - Lead",
+                        "Josh - Art",
+                        "Rachel - Art",
+                        "A contractors for art and narrative"
+                    ],
                     "tools": [
                         "unity",
                         "csharp",
@@ -22,8 +32,13 @@
                     "name": "Hazard Miner",
                     "id": "hazardMiner",
                     "description": "A 1-4 player card game where you have to balance safty and greed to gather as many resources as possible.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "https://store.steampowered.com/app/3228760/Ignition_Arena",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace"
+                    ],
                     "tools": [
                         "midjourney",
                         "photoshop"
@@ -33,12 +48,24 @@
                     "name": "The Flip Side",
                     "id": "theFlipSide",
                     "description": "A game where you flip between two mirrored worlds to fight enemies and solve puzzels, made by a team of 8.",
+                    "descriptionLong": "The Flip Side is a puzzle game where you must flip between two worlds to solve puzzles by moving objects around and fighting enemies. It is a fun, short experience created by 8 people for a University course.",
+                    "challenges": "",
                     "link": "https://chromecore.itch.io/the-flip-side",
                     "screenshots": [
                         1,
                         2,
                         3,
                         4
+                    ],
+                    "credits": [
+                        "Azel Akhmetova - Producer",
+                        "Rachel Buzarde - Artist",
+                        "Jake Orantes - Artist",
+                        "Samuel Ruske - Audio",
+                        "Max Sone - Programmer",
+                        "Nolan Taylor - Programmer",
+                        "Tayin Wallace - Programmer",
+                        "Mahonri White - Programmer / Designer"
                     ],
                     "tools": [
                         "unity",
@@ -52,8 +79,14 @@
                     "name": "Beamdown",
                     "id": "beamdown",
                     "description": "A boss rush, action game focused on combat where you play as a robot clearing worlds of enemies. Made by a team of 30.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace - Lead / Engineer",
+                        "29 others in art/engineering/design/audio"
+                    ],
                     "tools": [
                         "unity",
                         "csharp",
@@ -68,8 +101,13 @@
                     "name": "Pigments",
                     "id": "pigments",
                     "description": "A game jam puzzel-platformer made in 48 hours where you switch, merge, and split colored pigments to solve puzzels.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "https://chromecore.itch.io/pigments",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace"
+                    ],
                     "tools": [
                         "unity",
                         "csharp",
@@ -80,8 +118,13 @@
                     "name": "Stellar Winds",
                     "id": "stellarWinds",
                     "description": "A long term project with miniature space exploration, realistic based physics, and proceduarlly generated 3D planets.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "https://chromecore.itch.io/stellar-winds",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace"
+                    ],
                     "tools": [
                         "unity",
                         "csharp",
@@ -93,8 +136,13 @@
                     "name": "Grapple Side Scroller",
                     "id": "grappleSideScroller",
                     "description": "A short level design prototype created for a university course where you use a grapple hook to travers quickly through a level.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "https://chromecore.itch.io/side-scroller-level-design-project",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace"
+                    ],
                     "tools": [
                         "unity",
                         "csharp",
@@ -110,8 +158,13 @@
                     "name": "Budgetized",
                     "id": "budgetized",
                     "description": "An IOS app published on the app store to help manage finances through budgets, categories, and accounts.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "https://apps.apple.com/us/app/budgetized/id1658923604",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace"
+                    ],
                     "tools": [
                         "dart",
                         "flutter",
@@ -123,8 +176,13 @@
                     "name": "Space Generator",
                     "id": "spaceGenerator",
                     "description": "A web generator used to create randomly generated solar systems, stars, planets, and moons.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "https://chromecore.itch.io/space-generator",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace"
+                    ],
                     "tools": [
                         "unity",
                         "csharp"
@@ -134,8 +192,13 @@
                     "name": "Portfolio Website",
                     "id": "portfolio",
                     "description": "My porfolio website (this site) created over multiple iterations using different tools.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace"
+                    ],
                     "tools": [
                         "react",
                         "html",
@@ -151,8 +214,13 @@
                     "name": "Nexus - Worldbuilding",
                     "id": "nexusWorldBuilding",
                     "description": "An ongoing project where I am collecting data about worldbuilding topics ranging from stars and planets to life and technology.",
+                    "descriptionLong": "",
+                    "challenges": "",
                     "link": "",
                     "screenshots": [],
+                    "credits": [
+                        "Tayin Wallace"
+                    ],
                     "tools": [
                         "notion"
                     ]
