@@ -18,7 +18,7 @@ function Contact({ success, error })
         <div className='contact' id="contact">
             <h2 className='letsTalk'>Let's Talk!</h2>
             <div className='formSocials'>
-                <form action='https://submit-form.com/JGuUfg2AC'>
+                <form action='https://submit-form.com/9HOvqSp8h'>
                     <input type="hidden" name="_append" value="false" />
                     <input type="hidden" name="_redirect" value={`${baseUrl}/success#contact`} />
                     <input type="hidden" name="_error" value={`${baseUrl}/error#contact`} />
