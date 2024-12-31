@@ -41,7 +41,7 @@ function About()
                         <h2>Games/Software</h2>
                         <p>
                             <span>&#123;</span>
-                            I program and design games, apps, websites
+                            I program & design games, apps, websites
                             <span>&#125;</span></p>
                         <a href='https://drive.google.com/file/d/1AmegWO79QVZejVwYmzNuLmxkF4PsZZrg/view?usp=drive_link'
                             target='blank' className='resume'>

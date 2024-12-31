@@ -6,8 +6,8 @@
                 {
                     "name": "Ignition Arena",
                     "id": "ignitionArena",
-                    "description": "An online multiplayer, topdown space arena shooter with ship building and flight mechanics published on steam.",
-                    "descriptionLong": "",
+                    "description": "An online multiplayer, top-down space arena shooter with ship-building and flight mechanics published on Steam.",
+                    "descriptionLong": "I worked at Expedition Games as the main engineer out of 2. I worked there for about 8 months before the main vision holder continued it on his own, set to release in early 2025. Ignition Arena is a free-to-play, fast-paced, tactical PvP game where players build and customize ships for intense space battles. Compete in dynamic arenas featuring strategic combat, skill-based mechanics, and extensive ship customization. Outsmart and outgun opponents to claim victory!",
                     "duration": "8 months",
                     "link": "https://store.steampowered.com/app/3228760/Ignition_Arena",
                     "screenshots": [
@@ -33,21 +33,17 @@
                         "github",
                         "jira"
                     ],
-                    "sections": [
-                        {
-                            "title": "Challenges",
-                            "body": "test"
-                        }
-                    ]
+                    "sections": []
                 },
                 {
                     "name": "Hazard Miner",
                     "id": "hazardMiner",
-                    "description": "A 1-4 player card game where you have to balance safty and greed to gather as many resources as possible.",
-                    "descriptionLong": "",
+                    "description": "It is a 1-4-player card game where you have to balance safety and greed to gather as many resources as possible.",
+                    "descriptionLong": "Hazard Miner is a card game that started as a solo print-and-play project for an intro-level game design university course. The game required minimal art. After the course ended, I continued the project, turning it solo and multiplayer and adding some art using the newer Midjourney AI image generation software. After that, I published the game on The Game Crafter. It ended up being a card game where you must balance mining for minerals in different mineshafts and protecting your minerals from dangerous explosions and greed.",
                     "duration": "8 months",
                     "link": "https://www.thegamecrafter.com/games/hazard-miner",
                     "screenshots": [
+                        4,
                         1,
                         2,
                         3
@@ -64,8 +60,8 @@
                 {
                     "name": "The Flip Side",
                     "id": "theFlipSide",
-                    "description": "A game where you flip between two mirrored worlds to fight enemies and solve puzzels, made by a team of 8.",
-                    "descriptionLong": "The Flip Side is a puzzle game where you must flip between two worlds to solve puzzles by moving objects around and fighting enemies. It is a fun, short experience created by 8 people for a University course.",
+                    "description": "A game where you flip between two mirrored worlds to fight enemies and solve puzzles, made by a team of 8.",
+                    "descriptionLong": "The Flip Side project was created by a small team of 8 for a university course. The idea was to create a game where you could flip back and forth between 2 worlds, solve puzzles, and fight enemies to progress. There is the forest world and the city world, each with puzzles that correspond with and affect the other world.",
                     "duration": "3 months",
                     "link": "https://chromecore.itch.io/the-flip-side",
                     "screenshots": [
@@ -96,9 +92,9 @@
                 {
                     "name": "Stellar Winds",
                     "id": "stellarWinds",
-                    "description": "A long term project with miniature space exploration, realistic based physics, and proceduarlly generated 3D planets.",
-                    "descriptionLong": "",
-                    "duration": "2 years",
+                    "description": "A long-term project with miniature space exploration, realistically based physics, and procedurally generated 3D planets.",
+                    "descriptionLong": "Stellar Winds is a project that started from a simple physics simulator I created for my high school AP physics course. I simulated celestial physics, allowing three stars to orbit around each other, creating a figure 8. After this, I started to further the physics and created a custom solar system with planets made in Blender. You can fly between the planets and explore them. This was the first year of on-and-off development, and I ended up publishing it on Itch.io. The next 6 months consisted of creating procedural generation tools for placing planets and creating 3D planets with water, atmospheres, caves, and more.",
+                    "duration": "1.5 years",
                     "link": "https://chromecore.itch.io/stellar-winds",
                     "screenshots": [
                         1,
@@ -123,8 +119,8 @@
                 {
                     "name": "Beamdown",
                     "id": "beamdown",
-                    "description": "A boss rush, action game focused on combat where you play as a robot clearing worlds of enemies. Made by a team of 30.",
-                    "descriptionLong": "",
+                    "description": "A boss rush action game focused on combat where you play as a robot clearing worlds of enemies made by a team of 30.",
+                    "descriptionLong": "Beamdown is a game made as part of my senior capstone project at university. The course lasted a full 9 months (2 semesters), and was composed of 30 students making a game while going through regular industry steps. These phases include prototype, alpha, beta, gold, and live ops. The initial idea for the game was to create a top-down boss rush focused on combat, bosses, and environment.",
                     "duration": "on going",
                     "link": "",
                     "screenshots": [
@@ -150,8 +146,8 @@
                 {
                     "name": "Pigments",
                     "id": "pigments",
-                    "description": "A game jam puzzel-platformer made in 48 hours where you switch, merge, and split colored pigments to solve puzzels.",
-                    "descriptionLong": "",
+                    "description": "A game jam puzzle-platformer made in 48 hours where you switch, merge, and split colored pigments to solve puzzles.",
+                    "descriptionLong": "Pigments was a short game made over 48 hours for the 2021 GMTK game jam. It was created as a puzzle-platformer where you control small pigment characters. Each character is tied to a specific color, and you are only affected by the environment when it is the same color. You can join and split colors apart to solve puzzles and reach the next room. After the game jam was over in 2025, I worked more on the project for a level design university course. I re-made the project with new levels and mechanics like doors, buttons, and ink.",
                     "duration": "48 hours",
                     "link": "https://chromecore.itch.io/pigments",
                     "screenshots": [
@@ -173,8 +169,8 @@
                 {
                     "name": "Grapple Side Scroller",
                     "id": "grappleSideScroller",
-                    "description": "A short level design prototype created for a university course where you use a grapple hook to travers quickly through a level.",
-                    "descriptionLong": "",
+                    "description": "A short level design prototype created for a university course where you use a grappling hook to traverse quickly through a level.",
+                    "descriptionLong": "This was a level design project for a university course. We created a gym, prototype, and multiple passes to try to create a well-designed level. The project consists of one level, with grappling as the main mechanic. The level progresses in difficulty, leading to some fun and challenging grapple platforming sections.",
                     "duration": "1 week",
                     "link": "https://chromecore.itch.io/side-scroller-level-design-project",
                     "screenshots": [
@@ -201,10 +197,11 @@
                     "name": "Budgetized",
                     "id": "budgetized",
                     "description": "An IOS app published on the app store to help manage finances through budgets, categories, and accounts.",
-                    "descriptionLong": "",
+                    "descriptionLong": "Budgetized is an app that stemmed from my desire to learn more about how mobile apps are developed. I started by creating a basic Hello World app using Figma and Dart. After this, I hopped into Figma and created a design for the project. I then created the app and used X-Code to publish it on the app store. The app helps you keep track of finances by using budgets, transactions, accounts, and categories.",
                     "duration": "3 months",
                     "link": "https://apps.apple.com/us/app/budgetized/id1658923604",
                     "screenshots": [
+                        3,
                         1,
                         2
                     ],
@@ -223,7 +220,7 @@
                     "name": "Space Generator",
                     "id": "spaceGenerator",
                     "description": "A web generator used to create randomly generated solar systems, stars, planets, and moons.",
-                    "descriptionLong": "",
+                    "descriptionLong": "Space Generator is a short project I worked on in high school. It is composed of a simple generator that procedurally generates the variables for a planet, star, moon, asteroid, or star system. It uses realistic equations to generate the values.",
                     "duration": "1 month",
                     "link": "https://chromecore.itch.io/space-generator",
                     "screenshots": [
@@ -243,14 +240,15 @@
                 {
                     "name": "Portfolio Website",
                     "id": "portfolio",
-                    "description": "My porfolio website (this site) created over multiple iterations using different tools.",
-                    "descriptionLong": "",
+                    "description": "My portfolio website (this site), created over multiple iterations using different tools.",
+                    "descriptionLong": "My portfolio website consisted of 3 main designs and iterations. The first was a simple design using a template from Wix. The second site used basic HTML, CSS, and JavaScript and was deployed with Netlify. This version had a little more design and was a little more interactive. The last iteration is this website. It was created using React, Vite, CSS, and HTML. It was then published as a static website and has the best design.",
                     "duration": "1 week",
                     "link": "",
                     "screenshots": [
                         1,
                         2,
-                        3
+                        3,
+                        4
                     ],
                     "credits": [
                         "Tayin Wallace - Sole Developer"
@@ -271,7 +269,7 @@
                     "name": "Nexus - Worldbuilding",
                     "id": "nexusWorldBuilding",
                     "description": "An ongoing project where I am collecting data about worldbuilding topics ranging from stars and planets to life and technology.",
-                    "descriptionLong": "",
+                    "descriptionLong": "Nexus is a world-building side project that stemmed from my Space Generator. This project is ongoing, with plans to be an interactive website/application where you can procedurally or manually create and store the worlds that you make. At the moment, the project is in its early stages. So far, I have collected all the notes, variables, units, and equations I need to accurately generate anything from planets and stars to life and galaxies. The following steps include the design process of what the application will look like and the tools that will be used.",
                     "duration": "on going",
                     "link": "",
                     "screenshots": [

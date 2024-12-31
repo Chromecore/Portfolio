@@ -18,7 +18,7 @@ function ProjectCard({ project, linkToActual })
                     linkToActual && !project.link ?
                         null :
                         <div className="button">
-                            {linkToActual ? 'Link To Game' : 'Check It Out'}
+                            {linkToActual ? 'Link To Project' : 'Check It Out'}
                         </div>
                 }
             </a>
