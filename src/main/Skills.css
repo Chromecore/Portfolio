@@ -26,6 +26,10 @@
 
         svg {
             height: 5rem;
+
+            path {
+                fill: var(--primaryColor);
+            }
         }
 
         h3 {

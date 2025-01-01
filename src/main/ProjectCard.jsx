@@ -7,7 +7,7 @@ function ProjectCard({ project, linkToActual })
             <a className="project" href={linkToActual ? project.link : `/${project.id}`}
                 target={linkToActual ? "_blank" : ""}>
                 <div className="imageHolder">
-                    <img src={`projects/${project.id}/primary.jpg`}></img>
+                    <img src={`projects/${project.id}/primary.jpg`} alt={`Primary ${project.name} image`} />
                 </div>
                 <h4 className="title">
                     {project.name}

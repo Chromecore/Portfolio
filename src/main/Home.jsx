@@ -11,13 +11,15 @@ function Home({ success, error })
     return (
         <div className='home'>
             <Header />
-            <About />
-            <div className='spacer' />
-            <Skills />
-            <div className='spacer' />
-            <Projects />
-            <div className='spacer' />
-            <Contact success={success} error={error} />
+            <main>
+                <About />
+                <div className='spacer' />
+                <Skills />
+                <div className='spacer' />
+                <Projects />
+                <div className='spacer' />
+                <Contact success={success} error={error} />
+            </main>
             <Footer />
         </div>
     )

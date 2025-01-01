@@ -34,7 +34,8 @@ header {
   justify-content: center;
   font-size: min(3vw, 1.5rem);
 
-  h1 {
+  h1,
+  h2 {
     display: flex;
     column-gap: 0.5rem;
     font-weight: 900;
@@ -49,40 +50,49 @@ header {
 }
 
 nav {
-  display: flex;
-  align-items: start;
-  justify-content: end;
   flex-grow: 1;
-  gap: 3rem;
-  margin-left: 1rem;
-}
 
-.navItem {
-  display: flex;
-  align-items: center;
-  color: var(--secondaryLight);
-  font-size: 1.5rem;
-  font-weight: 800;
-  transition: color 0.3s ease, transform 0.3s ease;
-
-  svg {
-    height: 1.3rem;
-
-    path {
-      transition: fill 0.3s ease;
-      fill: var(--secondaryDark);
-    }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: end;
+    gap: 3rem;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 1rem;
   }
 }
 
-.navItem:hover,
-.navItem:focus,
-.navItem:focus-visible {
-  transform: scale(1.1);
-  color: var(--primaryLight);
+.navItem {
+  a {
+    display: flex;
+    align-items: center;
+    color: var(--secondaryLight);
+    font-size: 1.5rem;
+    font-weight: 800;
+    transition: color 0.3s ease, transform 0.3s ease;
 
-  path {
-    fill: var(--primaryLight);
+    svg {
+      height: 1.3rem;
+
+      path {
+        transition: fill 0.3s ease;
+        fill: var(--secondaryDark);
+      }
+    }
+  }
+
+  a:hover,
+  a:focus,
+  a:focus-visible {
+    transform: scale(1.1);
+    color: var(--primaryLight);
+
+    path {
+      fill: var(--primaryLight);
+    }
   }
 }
 

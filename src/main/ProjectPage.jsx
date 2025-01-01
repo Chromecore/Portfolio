@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import './ProjectPage.css'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
@@ -19,6 +19,8 @@ function ProjectPage()
             }
         });
     });
+
+    if (project == null) return <Navigate to="/404" />
 
     return (
         <div className='projectsPage'>
@@ -52,7 +54,7 @@ function ProjectPage()
                         <div className="toolsList">
                             {
                                 project.tools.map((tool, index) => (
-                                    <img src={`icons/${tool}.png`} key={index} alt={`Icon of ${tool}`} />
+                                    <img src={`icons/${tool}.png`} key={index} alt={`${tool} Icon`} />
                                 ))
                             }
                         </div>
@@ -68,8 +70,8 @@ function ProjectPage()
                     <div className='screenshots'>
                         {
                             project.screenshots.map((i, index) => (
-                                <div>
-                                    <img src={`projects/${project.id}/screenshots/${i}.jpg`} key={index}
+                                <div key={index}>
+                                    <img src={`projects/${project.id}/screenshots/${i}.jpg`}
                                         alt={`Screenshot number ${index} of ${project.name}`} />
                                 </div>
                             ))

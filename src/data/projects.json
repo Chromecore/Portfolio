@@ -102,7 +102,7 @@
                     "name": "Stellar Winds",
                     "id": "stellarWinds",
                     "description": "A long-term project with miniature space exploration, realistically based physics, and procedurally generated 3D planets.",
-                    "descriptionLong": "Stellar Winds is a project that started from a simple physics simulator I created for my high school AP physics course. I simulated celestial physics, allowing three stars to orbit around each other, creating a figure 8. After this, I started to further the physics and created a custom solar system with planets made in Blender. You can fly between the planets and explore them. This was the first year of on-and-off development, and I ended up publishing it on Itch.io. The next 6 months consisted of creating procedural generation tools for placing planets and creating 3D planets with water, atmospheres, caves, and more.",
+                    "descriptionLong": "Stellar Winds is a game/simulation that started from a simple physics simulator I created for my high school AP physics course. I simulated celestial physics, allowing three stars to orbit around each other, creating a figure 8. After this, I started to further the physics and created a custom solar system with planets made in Blender. You can fly between the planets and explore them. This was the first year of on-and-off development, and I ended up publishing it on Itch.io. The next 6 months consisted of creating procedural generation tools for placing planets and creating 3D planets with water, atmospheres, caves, and more.",
                     "duration": "1.5 years",
                     "link": "https://chromecore.itch.io/stellar-winds",
                     "screenshots": [

@@ -15,7 +15,7 @@ const socials = [
 function Contact({ success, error })
 {
     return (
-        <div className='contact' id="contact">
+        <section className='contact' id="contact">
             <h2 className='letsTalk'>Let's Talk!</h2>
             <div className='formSocials'>
                 <form action='https://submit-form.com/9HOvqSp8h'>
@@ -40,7 +40,7 @@ function Contact({ success, error })
                     }
                 </div>
             </div>
-        </div >
+        </section >
     )
 }
 

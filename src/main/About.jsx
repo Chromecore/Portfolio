@@ -17,7 +17,7 @@ const projectIDs = [
 function About()
 {
     return (
-        <div className='aboutParent'>
+        <section className='aboutParent'>
             <div className='about'>
                 {/* Images */}
                 <div className='images'>
@@ -25,7 +25,7 @@ function About()
                         projectIDs.map((id, index) =>
                             <div className='projectImage' key={index}>
                                 <a href={`/${id}`} className={`image${index}`}>
-                                    <img src={`projects/${id}/primarySized.jpg`} alt={`Image of ${id}`} />
+                                    <img src={`projects/${id}/primarySized.jpg`} alt={`Primary ${id} image`} />
                                 </a>
                             </div>
                         )
@@ -35,7 +35,7 @@ function About()
                 {/* Intro */}
                 <div className='intro'>
                     <div className="icons">
-                        <img src={iconsImage} alt="Games and software related icons"></img>
+                        <img src={iconsImage} alt="" />
                     </div>
                     <div className="introContent">
                         <h2>Games/Software</h2>
@@ -61,7 +61,7 @@ function About()
                     <ArrowIcon />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

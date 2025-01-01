@@ -8,6 +8,8 @@ function App()
 {
   useScrollToID();
 
+  /* const lightMode = localStorage.getItem('lightmode'); */
+
   return (
     <Routes>
       <Route path='/' element={<Home />} />

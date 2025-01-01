@@ -16,7 +16,7 @@ const iconMap = {
 function Skills()
 {
     return (
-        <div className="skillsSection" id='skills'>
+        <section className="skillsSection" id='skills'>
             <h2>Skills</h2>
             <div className='categoryList'>
                 {
@@ -25,7 +25,7 @@ function Skills()
                     )
                 }
             </div>
-        </div>
+        </section>
     )
 }
 
@@ -57,8 +57,8 @@ function Skill({ skill })
 {
     return (
         <div className="skill">
-            <img src={`icons/${skill.id}.png`}></img>
-            <p>{skill.name}</p>
+            <img src={`icons/${skill.id}.png`} aria-labelledby={`${skill.name}Skill`} />
+            <p id={`${skill.name}Skill`}>{skill.name}</p>
         </div>
     );
 };

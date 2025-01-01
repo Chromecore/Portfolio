@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import profilePicture from '../assets/images/profilePicture.png'
 import './Header.css'
 import AboutIcon from '../assets/icons/about'
@@ -27,20 +26,24 @@ function Header()
 
         {/* Hello */}
         <div className='hello'>
-          <h1>Hey,</h1>
+          <h2>Hey,</h2>
           <h1>I'm<span>Tayin</span></h1>
         </div>
 
         {/* Nav Items */}
         <nav>
-          {
-            navItems.map((navItem) =>
-              <a href={navItem.link} target={navItem.target} className='navItem' key={navItem.name}>
-                {navItem.icon}
-                <span>{navItem.name}</span>
-              </a>
-            )
-          }
+          <ul>
+            {
+              navItems.map((navItem) =>
+                <li key={navItem.name} className='navItem'>
+                  <a href={navItem.link} target={navItem.target} className='navItem'>
+                    {navItem.icon}
+                    <span>{navItem.name}</span>
+                  </a>
+                </li>
+              )
+            }
+          </ul>
         </nav>
       </div>
     </header>
