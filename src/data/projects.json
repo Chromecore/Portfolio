@@ -33,7 +33,16 @@
                         "github",
                         "jira"
                     ],
-                    "sections": []
+                    "sections": [
+                        {
+                            "title": "Contributions",
+                            "body": "My main task was to program all of the systems within the game. I was in charge of almost all of the code within the game except for the dedicated server code, some other back-end code, and some smaller front-end parts. Most of my time was spent on networking, shipbuilding, and ship flight. I also spent a lot of time setting up the UI, ensuring quality art was being created, helping with design, and assembling each ship component into a workable part of the game."
+                        },
+                        {
+                            "title": "Networking",
+                            "body": "The networking within the game allows for multiplayer through a dedicated server of matches that consist of small teams. We used Unity's Netcode systems. We utilized a dedicated server, lobby system, friends system, and more. The part that took the longest was the client prediction and reconciliation. This was to protect against cheaters within the game. However, physics-based client prediction is the most challenging type. We ran into many bugs where the physics didn't line up across the server and clients. Ultimately, we got a pretty good system setup where it only bugged out at faster speeds."
+                        }
+                    ]
                 },
                 {
                     "name": "Hazard Miner",
@@ -114,7 +123,20 @@
                         "photoshop",
                         "blender"
                     ],
-                    "sections": []
+                    "sections": [
+                        {
+                            "title": "Terrain Generation",
+                            "body": "The generation part of this project consisted of many different parts. I had the main planet generation that used a marching cubes algorithm on the GPU as a compute shader to generate the terrain. Running it as a computer shader on the GPU allowed faster generation times. Marching cubes allowed me to make a larger planet type, some with missing cores, some that looked like asteroids, and some that had caves that would travel through the middle of the planet."
+                        },
+                        {
+                            "title": "Planet Generation",
+                            "body": "For the planets, I had a couple of other parts that used some simple generation to create things like water, atmosphere, and rings/asteroids. This would randomly pick variables like sizes and colors to create the elements. I then used custom shaders to display and color everything. My shaders included a ring, terrain, atmosphere, and water shader. They each had their own variables and custom looks. To get objects on the planets, I used a set of layered noise algorithms that were also run on the GPU to generate their positions."
+                        },
+                        {
+                            "title": "Planet Placement",
+                            "body": "To place the planets, I had to generate a set of rules for where and how close to each other they could be placed. I also had to create a custom time-based physics function that allowed me to see ahead in time to see if there were any collisions that would happen during a certain time period. This helped ensure a stable system that didn't collapse too quickly."
+                        }
+                    ]
                 },
                 {
                     "name": "Beamdown",
@@ -141,7 +163,12 @@
                         "github",
                         "jira"
                     ],
-                    "sections": []
+                    "sections": [
+                        {
+                            "title": "Contributions",
+                            "body": "Throughout this project, I acted as the main vision holder and lead engineer. Lead-wise, I helped ensure the development process was going smoothly and helped settle any debates or arguments that occurred. I also helped with the general assignments for the course, presentations, and the setup for Steam. As lead engineer, I was responsible for ensuring the quality of code was good and assigning tasks to my engineers, as well as ensuring I got updates on the progress of those tasks. Engineering-wise, I was responsible for creating the combat system for the player. I also did a lot of systems here and there to make sure the game was in a complete state. Some of these included helping with UI, player mechanics, and the space station hub area."
+                        }
+                    ]
                 },
                 {
                     "name": "Pigments",

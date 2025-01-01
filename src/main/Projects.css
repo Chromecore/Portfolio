@@ -92,7 +92,7 @@
             }
 
             .projectListSpacer {
-                display: unset;
+                display: block;
                 margin-left: 50%;
             }
         }
