@@ -55,6 +55,7 @@ main {
   Helvetica,
   Arial,
   sans-serif;
+  font-display: swap;
   font-weight: 400;
 
   /* color-scheme: light dark; */

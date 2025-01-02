@@ -1,4 +1,5 @@
 import profilePicture from '../assets/images/profilePicture.png'
+import profilePictureWeb from '../assets/images/profilePicture.webp'
 import './Header.css'
 import AboutIcon from '../assets/icons/about'
 import SkillsIcon from '../assets/icons/skills'
@@ -20,8 +21,14 @@ function Header()
     <header id='about'>
       <div className='headerContent'>
         {/* Picture */}
-        <a href="/">
-          <img src={profilePicture} className="profilePic" alt="Profile Picture" />
+        <a href="/" aria-label="Jump to website home">
+          <picture>
+            <source
+              type='image/webp'
+              srcSet={profilePictureWeb}
+            />
+            <img src={profilePicture} className="profilePic" alt="Profile Picture" />
+          </picture>
         </a>
 
         {/* Hello */}
@@ -36,7 +43,8 @@ function Header()
             {
               navItems.map((navItem) =>
                 <li key={navItem.name} className='navItem'>
-                  <a href={navItem.link} target={navItem.target} className='navItem'>
+                  <a href={navItem.link} target={navItem.target} className='navItem'
+                    aria-label={`Jump to ${navItem.name}`}>
                     {navItem.icon}
                     <span>{navItem.name}</span>
                   </a>

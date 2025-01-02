@@ -8,7 +8,8 @@
 .about {
     display: flex;
     justify-content: center;
-    width: 1600px;
+    width: 1800px;
+    min-width: 800px;
 }
 
 .intro {
@@ -31,6 +32,7 @@
 
     img {
         width: 390px;
+        height: 177px;
         margin-bottom: 70px;
     }
 }

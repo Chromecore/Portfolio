@@ -6,10 +6,10 @@ import GithubIcon from '../assets/icons/github'
 import baseUrl from '../BaseData'
 
 const socials = [
-    { id: 1, icon: <ItchIcon />, link: 'https://chromecore.itch.io/' },
-    { id: 2, icon: <MailIcon />, link: 'mailto:tayin.wallace@outlook.com' },
-    { id: 3, icon: <LinkedInIcon />, link: 'https://www.linkedin.com/in/tayinwallace' },
-    { id: 4, icon: <GithubIcon />, link: 'https://github.com/Chromecore' }
+    { id: 1, name: "Itch", icon: <ItchIcon />, link: 'https://chromecore.itch.io/' },
+    { id: 2, name: "Mail", icon: <MailIcon />, link: 'mailto:tayin.wallace@outlook.com' },
+    { id: 3, name: "LinkedIn", icon: <LinkedInIcon />, link: 'https://www.linkedin.com/in/tayinwallace' },
+    { id: 4, name: "Github", icon: <GithubIcon />, link: 'https://github.com/Chromecore' }
 ]
 
 function Contact({ success, error })
@@ -33,7 +33,7 @@ function Contact({ success, error })
                 <div className='socials'>
                     {
                         socials.map((social) =>
-                            <a href={social.link} target='blank' key={social.id}>
+                            <a href={social.link} target='blank' key={social.id} aria-label={`Check out my${social.name} account`}>
                                 {social.icon}
                             </a>
                         )

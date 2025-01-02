@@ -57,7 +57,7 @@ function Skill({ skill })
 {
     return (
         <div className="skill">
-            <img src={`icons/${skill.id}.png`} aria-labelledby={`${skill.name}Skill`} />
+            <img src={`icons/${skill.id}.png`} aria-labelledby={`${skill.name}Skill`} alt="" />
             <p id={`${skill.name}Skill`}>{skill.name}</p>
         </div>
     );

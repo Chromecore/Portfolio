@@ -20,6 +20,7 @@ header {
 .profilePic {
   width: 20vw;
   max-width: 8rem;
+  aspect-ratio: 1 / 1;
   padding-right: 1.5rem;
   transition: transform 0.3s ease;
 }

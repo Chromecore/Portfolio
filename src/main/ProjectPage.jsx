@@ -28,7 +28,8 @@ function ProjectPage()
             <div className='projectContent'>
                 <div className='projectParent'>
                     <ProjectCard project={project} linkToActual={true} />
-                    <a href={`/#${project.id}`} className="backButton">Back</a>
+                    <a href={`/#${project.id}`} className="backButton"
+                        aria-label="Return to home page">Back</a>
                 </div>
                 <div className="mainProjectContent">
                     <div className='descriptionColumn'>

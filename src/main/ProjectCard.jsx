@@ -5,9 +5,16 @@ function ProjectCard({ project, linkToActual })
     return (
         <div id={project.id}>
             <a className="project" href={linkToActual ? project.link : `/${project.id}`}
+                aria-label={linkToActual ? "Link to actual project" : "Check out the project"}
                 target={linkToActual ? "_blank" : ""}>
                 <div className="imageHolder">
-                    <img src={`projects/${project.id}/primary.jpg`} alt={`Primary ${project.name} image`} />
+                    <picture>
+                        <source
+                            type='image/webp'
+                            srcSet={`projects/${project.id}/primary.webp`}
+                        />
+                        <img src={`projects/${project.id}/primary.jpg`} alt={`Primary ${project.name} image`} />
+                    </picture>
                 </div>
                 <h4 className="title">
                     {project.name}
