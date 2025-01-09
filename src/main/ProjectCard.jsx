@@ -16,10 +16,10 @@ function ProjectCard({ project, linkToActual })
                         <img src={`projects/${project.id}/primary.jpg`} alt={`Primary ${project.name} image`} />
                     </picture>
                 </div>
-                <h4 className="title">
+                <div className="title">
                     {project.name}
                     <p className='duration'>{project.duration}</p>
-                </h4>
+                </div>
                 <p className="description">{project.description}</p>
                 {
                     linkToActual && !project.link ?

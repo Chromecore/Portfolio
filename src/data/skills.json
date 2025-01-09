@@ -37,8 +37,8 @@
                     "id": "csharp"
                 },
                 {
-                    "name": "GameMaker",
-                    "id": "gameMaker"
+                    "name": "Game Design",
+                    "id": "design"
                 },
                 {
                     "name": "World Building",
@@ -49,12 +49,12 @@
                     "id": "unity"
                 },
                 {
-                    "name": "Blender",
-                    "id": "blender"
+                    "name": "GameMaker",
+                    "id": "gameMaker"
                 },
                 {
-                    "name": "Game Design",
-                    "id": "design"
+                    "name": "Blender",
+                    "id": "blender"
                 }
             ]
         },
@@ -79,20 +79,20 @@
                     "id": "git"
                 },
                 {
-                    "name": "Photoshop",
-                    "id": "photoshop"
-                },
-                {
-                    "name": "Math/Physics",
-                    "id": "math"
-                },
-                {
                     "name": "Java",
                     "id": "java"
                 },
                 {
                     "name": "Python",
                     "id": "python"
+                },
+                {
+                    "name": "Photoshop",
+                    "id": "photoshop"
+                },
+                {
+                    "name": "Math/Physics",
+                    "id": "math"
                 },
                 {
                     "name": "My SQL",
