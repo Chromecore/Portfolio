@@ -42,7 +42,7 @@ function Category({ category })
         <div className='category'>
             <DynamicIcon name={category.name} />
             <h3>{category.name}</h3>
-            <div className="skillsList">
+            <div className="skillsList" role="list">
                 {
                     category.skills.map((skill) =>
                         <Skill skill={skill} key={skill.name} />
@@ -56,9 +56,9 @@ function Category({ category })
 function Skill({ skill })
 {
     return (
-        <div className="skill">
-            <img src={`icons/${skill.id}.png`} aria-labelledby={`${skill.name}Skill`} alt="" />
-            <p id={`${skill.name}Skill`}>{skill.name}</p>
+        <div className="skill" aria-label={`${skill.name} skill`} role="listitem">
+            <img src={`icons/${skill.id}.png`} aria-hidden="true" alt="" />
+            <p id={`${skill.name}Skill`} aria-hidden="true">{skill.name}</p>
         </div>
     );
 };

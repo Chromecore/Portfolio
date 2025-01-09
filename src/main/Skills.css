@@ -56,7 +56,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            color: var(--secondaryLight);
+            color: var(--primaryLight);
             width: 80px;
             aspect-ratio: 1/1;
             font-weight: 400;
