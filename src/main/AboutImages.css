@@ -82,10 +82,10 @@
     }
 
     .image5 {
-        width: 200px;
+        width: 400px;
         z-index: 4;
-        top: calc(340px * var(--scale) + var(--offsetY));
-        left: calc(0px * var(--scale) + var(--offsetX));
+        top: calc(400px * var(--scale) + var(--offsetY));
+        left: calc(-100px * var(--scale) + var(--offsetX));
     }
 }
 

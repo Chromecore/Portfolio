@@ -12,7 +12,7 @@ const projectIDs = [
     'budgetized',
     'stellarWinds',
     'theFlipSide',
-    'pigments',
+    'beamdown',
 ]
 
 function About()
