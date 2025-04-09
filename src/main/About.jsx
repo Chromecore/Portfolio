@@ -10,7 +10,7 @@ const projectIDs = [
     'hazardMiner',
     'ignitionArena',
     'budgetized',
-    'stellarWinds',
+    'iteration',
     'theFlipSide',
     'beamdown',
 ]

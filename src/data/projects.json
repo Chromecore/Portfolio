@@ -67,6 +67,32 @@
                     "sections": []
                 },
                 {
+                    "name": "Iteration",
+                    "id": "iteration",
+                    "description": "A topdown bossrush where you hack-and-slash through unique bosses and environments with fast-paced combat.",
+                    "descriptionLong": "Iteration is a topdown 2D bossrush game where you hack-and-slash your way through different bosses in different environments. Fight your way through bosses using the fast-paced sword-fighting combat. This is a current on going project of mine where I plan to release the game to Steam and go through the whole process of producation and promotion for a game.",
+                    "duration": "on going",
+                    "link": "https://store.steampowered.com/app/3638280/Iteration",
+                    "screenshots": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                    ],
+                    "credits": [
+                        "Tayin Wallace - Solo Developer"
+                    ],
+                    "tools": [
+                        "unity",
+                        "csharp",
+                        "photoshop",
+                        "git",
+                        "github"
+                    ],
+                    "sections": []
+                },
+                {
                     "name": "The Flip Side",
                     "id": "theFlipSide",
                     "description": "A game where you flip between two mirrored worlds to fight enemies and solve puzzles, made by a team of 8.",
@@ -97,6 +123,39 @@
                         "github"
                     ],
                     "sections": []
+                },
+                {
+                    "name": "Beamdown",
+                    "id": "beamdown",
+                    "description": "A boss rush action game focused on combat where you play as a robot clearing worlds of enemies made by a team of 30.",
+                    "descriptionLong": "Beamdown is a game made as part of my senior capstone project at university. The course lasted a full 9 months (2 semesters), and was composed of 30 students making a game while going through regular industry steps. These phases include prototype, alpha, beta, gold, and live ops. The initial idea for the game was to create a top-down boss rush focused on combat, bosses, and environment.",
+                    "duration": "on going",
+                    "link": "https://store.steampowered.com/app/3466230/Beamdown/",
+                    "screenshots": [
+                        3,
+                        1,
+                        2,
+                        4
+                    ],
+                    "credits": [
+                        "Tayin Wallace - Lead / Engineer",
+                        "29 others in art/engineering/design/audio"
+                    ],
+                    "tools": [
+                        "unity",
+                        "csharp",
+                        "photoshop",
+                        "steam",
+                        "git",
+                        "github",
+                        "jira"
+                    ],
+                    "sections": [
+                        {
+                            "title": "Contributions",
+                            "body": "Throughout this project, I acted as the main vision holder and lead engineer. Lead-wise, I helped ensure the development process was going smoothly and helped settle any debates or arguments that occurred. I also helped with the general assignments for the course, presentations, and the setup for Steam. As lead engineer, I was responsible for ensuring the quality of code was good and assigning tasks to my engineers, as well as ensuring I got updates on the progress of those tasks. Engineering-wise, I was responsible for creating the combat system for the player. I also did a lot of systems here and there to make sure the game was in a complete state. Some of these included helping with UI, player mechanics, and the space station hub area."
+                        }
+                    ]
                 },
                 {
                     "name": "Stellar Winds",
@@ -135,39 +194,6 @@
                         {
                             "title": "Planet Placement",
                             "body": "To place the planets, I had to generate a set of rules for where and how close to each other they could be placed. I also had to create a custom time-based physics function that allowed me to see ahead in time to see if there were any collisions that would happen during a certain time period. This helped ensure a stable system that didn't collapse too quickly."
-                        }
-                    ]
-                },
-                {
-                    "name": "Beamdown",
-                    "id": "beamdown",
-                    "description": "A boss rush action game focused on combat where you play as a robot clearing worlds of enemies made by a team of 30.",
-                    "descriptionLong": "Beamdown is a game made as part of my senior capstone project at university. The course lasted a full 9 months (2 semesters), and was composed of 30 students making a game while going through regular industry steps. These phases include prototype, alpha, beta, gold, and live ops. The initial idea for the game was to create a top-down boss rush focused on combat, bosses, and environment.",
-                    "duration": "on going",
-                    "link": "https://store.steampowered.com/app/3466230/Beamdown/",
-                    "screenshots": [
-                        3,
-                        1,
-                        2,
-                        4
-                    ],
-                    "credits": [
-                        "Tayin Wallace - Lead / Engineer",
-                        "29 others in art/engineering/design/audio"
-                    ],
-                    "tools": [
-                        "unity",
-                        "csharp",
-                        "photoshop",
-                        "steam",
-                        "git",
-                        "github",
-                        "jira"
-                    ],
-                    "sections": [
-                        {
-                            "title": "Contributions",
-                            "body": "Throughout this project, I acted as the main vision holder and lead engineer. Lead-wise, I helped ensure the development process was going smoothly and helped settle any debates or arguments that occurred. I also helped with the general assignments for the course, presentations, and the setup for Steam. As lead engineer, I was responsible for ensuring the quality of code was good and assigning tasks to my engineers, as well as ensuring I got updates on the progress of those tasks. Engineering-wise, I was responsible for creating the combat system for the player. I also did a lot of systems here and there to make sure the game was in a complete state. Some of these included helping with UI, player mechanics, and the space station hub area."
                         }
                     ]
                 },
