@@ -3,25 +3,35 @@
     flex-direction: column;
     align-items: space;
     justify-content: space-between;
-    gap: 10px;
+    gap: 12px;
     background-color: var(--secondaryDark);
     border-radius: 10px;
-    width: 230px;
-    height: 320px;
+    width: 100%;
+    max-width: 280px;
+    min-width: 200px;
+    height: auto;
+    min-height: 360px;
     box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.612);
-    padding: 5px;
+    padding: 12px;
     text-align: center;
     transition: border 0.3s ease;
     border: 2px solid var(--primaryDark);
 
     .imageHolder {
         width: 100%;
+        aspect-ratio: 4/3;
         border-radius: 10px;
         overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     picture {
         width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
     }
 
     img {
@@ -29,6 +39,8 @@
         height: 100%;
         transition: transform 0.3s ease;
         object-fit: cover;
+        object-position: top center;
+        transform-origin: top;
     }
 
     p {
@@ -40,10 +52,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 1rem 0;
+        margin: 0 0 1.5rem 0;
         color: var(--primaryLight);
         font-weight: 800;
-        font-size: 1.25rem;
+        font-size: clamp(1rem, 4vw, 1.25rem);
     }
 
     .duration {
@@ -51,13 +63,15 @@
         bottom: -1.2rem;
         color: var(--primaryColor);
         font-weight: 400;
-        font-size: 1rem;
+        font-size: clamp(0.8rem, 3vw, 1rem);
     }
 
     .description {
         color: var(--secondaryLight);
         font-weight: 400;
-        font-size: 1rem;
+        font-size: clamp(0.875rem, 3vw, 1rem);
+        margin: 0.5rem 0;
+        flex-grow: 1;
     }
 
     .button {
@@ -65,10 +79,11 @@
         background: linear-gradient(to right, var(--primaryColor) 0%, var(--secondaryColor) 100%);
         font-weight: 800;
         color: var(--primaryDark);
-        font-size: 1rem;
-        padding: 0.4rem 0;
+        font-size: clamp(0.875rem, 3vw, 1rem);
+        padding: 0.6rem 0;
         width: 100%;
         border-radius: 10px;
+        margin-top: auto;
     }
 }
 
@@ -84,5 +99,31 @@
 
     img {
         transform: scale(1.1);
+        transform-origin: top;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .project {
+        padding: 10px;
+        gap: 8px;
+        min-width: 180px;
+        min-height: 320px;
+
+        .imageHolder {
+            height: 100px;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .project {
+        min-width: 160px;
+        min-height: 300px;
+        padding: 8px;
+
+        .imageHolder {
+            height: 85px;
+        }
     }
 }

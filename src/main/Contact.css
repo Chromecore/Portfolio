@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .letsTalk {
@@ -15,22 +16,25 @@
 .formSocials {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
     width: 90vw;
-    max-width: 400px;
+    max-width: 500px;
 
     .input {
         display: flex;
         flex-direction: column;
-        gap: 0.25rem;
+        gap: 0.3rem;
         width: 100%;
 
         div {
@@ -46,11 +50,13 @@ form {
         label {
             color: var(--primaryLight);
             margin-left: 0.5rem;
+            font-size: 1.1rem;
         }
 
         label.required:after {
             content: "*";
             color: var(--errorColor);
+            margin-left: 0.3rem;
         }
 
         input,
@@ -58,29 +64,29 @@ form {
             resize: none;
             box-sizing: border-box;
             width: 100%;
-            height: 30px;
+            height: 35px;
             color: var(--primaryLight);
             background-color: var(--secondaryDark);
             font-size: 1rem;
-            padding: 0.5rem 1rem;
+            padding: 0.6rem 1.2rem;
             box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.612);
             white-space: nowrap;
             overflow-y: hidden;
             z-index: 1;
+            border-radius: 6px;
         }
 
         input::-webkit-scrollbar,
         textarea::-webkit-scrollbar {
             height: 0rem;
         }
-
     }
 
     .input:last-of-type {
         textarea {
             resize: vertical;
-            height: 120px;
-            min-height: 120px;
+            height: 150px;
+            min-height: 150px;
             max-height: 300px;
             white-space: unset;
             overflow-y: unset;
@@ -96,8 +102,8 @@ form {
         color: var(--primaryDark);
         font-size: 1.25rem;
         border-radius: 0.5rem;
-        padding: 0.4rem 0.8rem;
-        margin-top: 5rem;
+        padding: 0.5rem 1.2rem;
+        margin-top: 3rem;
     }
 
     button:hover,
@@ -120,19 +126,19 @@ form {
 }
 
 .socials {
-    margin-left: min(90vw, 400px);
-    padding-left: 80px;
+    margin-left: min(90vw, 500px);
+    padding-left: 100px;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     position: absolute;
 
     a {
         svg {
-            width: 2rem;
-            height: 2rem;
+            width: 2.2rem;
+            height: 2.2rem;
 
             path {
                 fill: var(--primaryColor);
@@ -159,6 +165,7 @@ form {
 
     .formSocials {
         flex-direction: column-reverse;
+        padding: 0 1rem;
     }
 
     .socials {
@@ -168,5 +175,11 @@ form {
         margin-left: 0;
         flex-direction: row;
         justify-content: center;
+        gap: 2rem;
+
+        a svg {
+            width: 2rem;
+            height: 2rem;
+        }
     }
 }
