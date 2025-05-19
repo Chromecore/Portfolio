@@ -1,0 +1,49 @@
+{
+	"oldProjects": 
+	[
+		{
+			"name": "Nexus - Worldbuilding",
+			"id": "nexusWorldBuilding",
+			"description": "An ongoing project where I am collecting data about worldbuilding topics ranging from stars and planets to life and technology.",
+			"descriptionLong": "Nexus is a world-building side project that stemmed from my Space Generator. This project is ongoing, with plans to be an interactive website/application where you can procedurally or manually create and store the worlds that you make. At the moment, the project is in its early stages. So far, I have collected all the notes, variables, units, and equations I need to accurately generate anything from planets and stars to life and galaxies. The following steps include the design process of what the application will look like and the tools that will be used.",
+			"duration": "on going",
+			"link": "",
+			"screenshots": [
+				1,
+				2,
+				3,
+				4
+			],
+			"credits": [
+				"Tayin Wallace - Sole Developer"
+			],
+			"tools": [
+				"notion"
+			],
+			"sections": []
+		},
+		{
+			"name": "Crayola Scribble Scrubbie Pets",
+			"id": "scribscrub",
+			"description": "A mobile game that transforms Crayola's #1 selling toy into digial companies with endless creative fun and interactive pet care activites.",
+			"descriptionLong": "A project owned by Red Games Co. I worked as a games engineer contract worker. I helped with the creation of systems from developer tools to help manage data to the first time user experiences of the game.",
+			"duration": "",
+			"link": "https://apps.apple.com/us/app/crayola-scribble-scrubbie-pets/id1475682282",
+			"credits": [
+			],
+			"screenshots": [
+				1,
+				2,
+				3
+			],
+			"tools": [
+				"unity",
+				"csharp",
+				"git"
+			],
+			"sections": [
+				
+			]
+		}
+	]
+}

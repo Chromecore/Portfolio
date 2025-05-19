@@ -1,0 +1,19 @@
+{
+    "experiences": [
+        {
+            "name": "Games Engineer",
+            "id": "redGames",
+            "link": "https://www.redgames.co/"
+        },
+        {
+            "name": "Bachelors: Software, Games Emphasis",
+            "id": "uou",
+            "link": "https://www.linkedin.com/company/expedition-games/"
+        },
+        {
+            "name": "Unity Systems Engineer Intern",
+            "id": "expeditionGames",
+            "link": "https://www.linkedin.com/company/expedition-games/"
+        }
+    ]
+}

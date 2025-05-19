@@ -3,6 +3,7 @@ import profilePictureWeb from '../assets/images/profilePicture.webp'
 import './Header.css'
 import AboutIcon from '../assets/icons/about'
 import SkillsIcon from '../assets/icons/skills'
+import ExperienceIcon from '../assets/icons/experience'
 import ProjectsIcon from '../assets/icons/projects'
 import MailIcon from '../assets/icons/mail'
 import ResumeIcon from '../assets/icons/resume'
@@ -12,6 +13,7 @@ function Header()
   const navItems = [
     { name: 'About', icon: <AboutIcon />, link: '#about' },
     { name: 'Skills', icon: <SkillsIcon />, link: '#skills' },
+    { name: 'Experience', icon: <ExperienceIcon />, link: '#experience' },
     { name: 'Projects', icon: <ProjectsIcon />, link: '#projects' },
     { name: 'Contact', icon: <MailIcon />, link: '#contact' },
     { name: 'Resume', icon: <ResumeIcon />, target: 'blank', link: 'https://drive.google.com/file/d/1AmegWO79QVZejVwYmzNuLmxkF4PsZZrg/view?usp=drive_link' }

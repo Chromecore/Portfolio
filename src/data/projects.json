@@ -318,27 +318,6 @@
                         "github"
                     ],
                     "sections": []
-                },
-                {
-                    "name": "Nexus - Worldbuilding",
-                    "id": "nexusWorldBuilding",
-                    "description": "An ongoing project where I am collecting data about worldbuilding topics ranging from stars and planets to life and technology.",
-                    "descriptionLong": "Nexus is a world-building side project that stemmed from my Space Generator. This project is ongoing, with plans to be an interactive website/application where you can procedurally or manually create and store the worlds that you make. At the moment, the project is in its early stages. So far, I have collected all the notes, variables, units, and equations I need to accurately generate anything from planets and stars to life and galaxies. The following steps include the design process of what the application will look like and the tools that will be used.",
-                    "duration": "on going",
-                    "link": "",
-                    "screenshots": [
-                        1,
-                        2,
-                        3,
-                        4
-                    ],
-                    "credits": [
-                        "Tayin Wallace - Sole Developer"
-                    ],
-                    "tools": [
-                        "notion"
-                    ],
-                    "sections": []
                 }
             ]
         }
