@@ -1,12 +1,18 @@
+import useTilt from '../useTilt.jsx'
 import './ProjectCard.css'
 
 function ProjectCard({ project, linkToActual })
 {
+    const { ref, onMouseMove, onMouseLeave } = useTilt({ maxAngle: 14, perspective: 700, scale: 1.03 })
+
     return (
         <div id={project.id}>
-            <a className="project" href={linkToActual ? project.link : `/${project.id}`}
+            <a className="project" ref={ref}
+                href={linkToActual ? project.link : `/${project.id}`}
                 aria-label={linkToActual ? "Link to actual project" : "Check out the project"}
-                target={linkToActual ? "_blank" : ""}>
+                target={linkToActual ? "_blank" : ""}
+                onMouseMove={onMouseMove}
+                onMouseLeave={onMouseLeave}>
                 <div className="imageHolder">
                     <picture>
                         <source

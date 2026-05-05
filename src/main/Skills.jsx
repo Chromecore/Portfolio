@@ -5,6 +5,7 @@ import AppsIcon from '../assets/icons/apps';
 import GeneralIcon from '../assets/icons/general';
 import './Skills.css'
 import skillsdata from '../data/skills.json';
+import useTilt from '../useTilt.jsx';
 
 const iconMap = {
     "Web": <WebIcon />,
@@ -55,8 +56,12 @@ function Category({ category })
 
 function Skill({ skill })
 {
+    const { ref, onMouseMove, onMouseLeave } = useTilt({ maxAngle: 12, perspective: 400, scale: 1.1 })
+
     return (
-        <div className="skill" aria-label={`${skill.name} skill`} role="listitem">
+        <div className="skill" ref={ref}
+            aria-label={`${skill.name} skill`} role="listitem"
+            onMouseMove={onMouseMove} onMouseLeave={onMouseLeave}>
             <img src={`icons/${skill.id}.png`} aria-hidden="true" alt="" />
             <p id={`${skill.name}Skill`} aria-hidden="true">{skill.name}</p>
         </div>
