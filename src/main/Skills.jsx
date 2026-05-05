@@ -16,7 +16,7 @@ const iconMap = {
 function Skills()
 {
     return (
-        <section className="skillsSection" id='skills'>
+        <section className="skillsSection reveal" id='skills'>
             <h2>Skills</h2>
             <div className='categoryList'>
                 {

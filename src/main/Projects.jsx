@@ -15,7 +15,7 @@ const iconMap = {
 function Projects()
 {
     return (
-        <section className="projectsSection" id='projects'>
+        <section className="projectsSection reveal" id='projects'>
             <h2>Projects</h2>
             <div className='projectCategories'>
                 {

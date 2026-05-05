@@ -57,7 +57,7 @@ function About()
                             I program & design games, apps, websites
                             <span>&#125;</span></p>
                         <a href='https://drive.google.com/file/d/1AmegWO79QVZejVwYmzNuLmxkF4PsZZrg/view?usp=drive_link'
-                            target='blank' className='resume' aria-label='See my resume'>
+                            target='_blank' rel='noopener noreferrer' className='resume' aria-label='See my resume'>
                             <ResumeIcon />
                             <span>Resume</span>
                         </a>

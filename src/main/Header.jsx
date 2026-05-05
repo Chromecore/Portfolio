@@ -16,7 +16,7 @@ function Header()
     { name: 'Experience', icon: <ExperienceIcon />, link: '#experience' },
     { name: 'Projects', icon: <ProjectsIcon />, link: '#projects' },
     { name: 'Contact', icon: <MailIcon />, link: '#contact' },
-    { name: 'Resume', icon: <ResumeIcon />, target: 'blank', link: 'https://drive.google.com/file/d/1AmegWO79QVZejVwYmzNuLmxkF4PsZZrg/view?usp=drive_link' }
+    { name: 'Resume', icon: <ResumeIcon />, target: '_blank', link: 'https://drive.google.com/file/d/1AmegWO79QVZejVwYmzNuLmxkF4PsZZrg/view?usp=drive_link' }
   ]
 
   return (
@@ -45,8 +45,9 @@ function Header()
             {
               navItems.map((navItem) =>
                 <li key={navItem.name} className='navItem'>
-                  <a href={navItem.link} target={navItem.target} className='navItem'
-                    aria-label={`Jump to ${navItem.name}`}>
+                  <a href={navItem.link} target={navItem.target}
+                    rel={navItem.target === '_blank' ? 'noopener noreferrer' : undefined}
+                    className='navItem' aria-label={`Jump to ${navItem.name}`}>
                     {navItem.icon}
                     <span>{navItem.name}</span>
                   </a>

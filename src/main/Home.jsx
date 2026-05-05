@@ -6,9 +6,11 @@ import Skills from './Skills.jsx'
 import Experiences from './Experience.jsx'
 import Projects from './Projects.jsx'
 import Footer from './Footer.jsx'
+import useReveal from '../useReveal.jsx'
 
 function Home({ success, error })
 {
+    useReveal()
     return (
         <div className='home'>
             <Header />

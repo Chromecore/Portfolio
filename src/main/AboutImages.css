@@ -137,16 +137,3 @@
     }
 }
 
-/* @media only screen and (max-width: 400px) {
-    .images {
-        .projectImage {
-            --scale: 0.3;
-        }
-    }
-}
-
-@media only screen and (max-width: 200px) {
-    .images {
-        display: none;
-    }
-} */

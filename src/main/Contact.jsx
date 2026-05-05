@@ -15,7 +15,7 @@ const socials = [
 function Contact({ success, error })
 {
     return (
-        <section className='contact' id="contact">
+        <section className='contact reveal' id="contact">
             <h2 className='letsTalk'>Let's Talk!</h2>
             <div className='formSocials'>
                 <form action='https://submit-form.com/9HOvqSp8h'>
@@ -33,7 +33,7 @@ function Contact({ success, error })
                 <div className='socials'>
                     {
                         socials.map((social) =>
-                            <a href={social.link} target='blank' key={social.id} aria-label={`Check out my${social.name} account`}>
+                            <a href={social.link} target='_blank' rel='noopener noreferrer' key={social.id} aria-label={`Check out my ${social.name} account`}>
                                 {social.icon}
                             </a>
                         )
