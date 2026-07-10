@@ -1,4 +1,4 @@
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, Link, useNavigate, useLocation } from "react-router-dom";
 import './ProjectPage.css'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
@@ -8,6 +8,8 @@ import projectdata from '../data/projects.json';
 function ProjectPage()
 {
     const { projectID } = useParams();
+    const navigate = useNavigate();
+    const location = useLocation();
     let project = null;
     projectdata.projects.forEach(category =>
     {
@@ -22,46 +24,68 @@ function ProjectPage()
 
     if (project == null) return <Navigate to="/404" />
 
+    function handleBackClick(event)
+    {
+        event.preventDefault();
+        if (location.state?.fromApp)
+        {
+            navigate(-1);
+        } else
+        {
+            navigate(`/#${project.id}`, { viewTransition: true });
+        }
+    }
+
     return (
         <div className='projectsPage'>
             <Header />
             <div className='projectContent'>
                 <div className='projectParent'>
                     <ProjectCard project={project} linkToActual={true} />
-                    <a href={`/#${project.id}`} className="backButton"
-                        aria-label="Return to home page">Back</a>
+                    <Link to={`/#${project.id}`} viewTransition className="backButton"
+                        onClick={handleBackClick}
+                        aria-label="Return to home page">Back</Link>
                 </div>
                 <div className="mainProjectContent">
                     <div className='descriptionColumn'>
                         {
-                            project.descriptionLong && <>
+                            project.descriptionLong && <div className='infoSection'>
                                 <h2>Description</h2>
                                 <p>{project.descriptionLong}</p>
-                            </>
+                            </div>
                         }
                         {
-                            project.credits.length > 0 && <>
+                            project.credits.length > 0 && <div className='infoSection'>
                                 <h2>Credits</h2>
-                                <ul>
+                                <div className='creditsList'>
                                     {
-                                        project.credits.map((name) => (
-                                            <li key={name}>{name}</li>
-                                        ))
+                                        project.credits.map((credit) =>
+                                        {
+                                            const [name, role] = credit.split(' - ')
+                                            return (
+                                                <div className='creditChip' key={credit}>
+                                                    <span className='creditName'>{name}</span>
+                                                    {role && <span className='creditRole'>{role}</span>}
+                                                </div>
+                                            )
+                                        })
                                     }
-                                </ul>
-                            </>
+                                </div>
+                            </div>
                         }
-                        <h2>Tools</h2>
-                        <div className="toolsList">
-                            {
-                                project.tools.map((tool, index) => (
-                                    <img src={`icons/${tool}.png`} key={index} alt={`${tool} Icon`} />
-                                ))
-                            }
+                        <div className='infoSection'>
+                            <h2>Tools</h2>
+                            <div className="toolsList">
+                                {
+                                    project.tools.map((tool, index) => (
+                                        <img src={`icons/${tool}.png`} key={index} alt={`${tool} Icon`} />
+                                    ))
+                                }
+                            </div>
                         </div>
                         {
                             project.sections.map((section, index) => (
-                                <div key={index}>
+                                <div className='infoSection' key={index}>
                                     <h2>{section.title}</h2>
                                     <p>{section.body}</p>
                                 </div>

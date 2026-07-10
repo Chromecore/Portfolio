@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import profilePicture from '../assets/images/profilePicture.png'
 import profilePictureWeb from '../assets/images/profilePicture.webp'
 import './Header.css'
@@ -23,7 +24,7 @@ function Header()
     <header id='about'>
       <div className='headerContent'>
         {/* Picture */}
-        <a href="/" aria-label="Jump to website home">
+        <Link to="/" viewTransition aria-label="Jump to website home">
           <picture>
             <source
               type='image/webp'
@@ -31,7 +32,7 @@ function Header()
             />
             <img src={profilePicture} className="profilePic" alt="Profile Picture" />
           </picture>
-        </a>
+        </Link>
 
         {/* Hello */}
         <div className='hello'>
@@ -45,12 +46,19 @@ function Header()
             {
               navItems.map((navItem) =>
                 <li key={navItem.name} className='navItem'>
-                  <a href={navItem.link} target={navItem.target}
-                    rel={navItem.target === '_blank' ? 'noopener noreferrer' : undefined}
-                    className='navItem' aria-label={`Jump to ${navItem.name}`}>
-                    {navItem.icon}
-                    <span>{navItem.name}</span>
-                  </a>
+                  {
+                    navItem.target === '_blank' ?
+                      <a href={navItem.link} target={navItem.target} rel='noopener noreferrer'
+                        className='navItem' aria-label={`Jump to ${navItem.name}`}>
+                        {navItem.icon}
+                        <span>{navItem.name}</span>
+                      </a> :
+                      <Link to={navItem.link} viewTransition
+                        className='navItem' aria-label={`Jump to ${navItem.name}`}>
+                        {navItem.icon}
+                        <span>{navItem.name}</span>
+                      </Link>
+                  }
                 </li>
               )
             }
