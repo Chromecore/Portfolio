@@ -1,19 +1,31 @@
 {
     "experiences": [
         {
-            "name": "Games Engineer",
+            "name": "Red Games Co.",
             "id": "redGames",
-            "link": "https://www.redgames.co/"
+            "link": "https://www.redgames.co/",
+            "detailImage": "redGamesLarge.jpg",
+            "levels": [
+                { "title": "Contract Software Engineer", "duration": "2 mo", "weight": 1 },
+                { "title": "Unity Engineer 1", "duration": "1 yr 1 mo", "weight": 3 }
+            ]
         },
         {
-            "name": "Bachelors: Software, Games Emphasis",
+            "name": "University of Utah",
             "id": "uou",
-            "link": "https://www.utah.edu"
+            "link": "https://www.utah.edu",
+            "levels": [
+                { "title": "Bachelor's, Software Engineering (Games Emphasis)", "duration": "4 yrs", "weight": 1 }
+            ]
         },
         {
-            "name": "Unity Systems Engineer Intern",
+            "name": "Expedition Games",
             "id": "expeditionGames",
-            "link": "https://www.linkedin.com/company/expedition-games/"
+            "link": "https://www.linkedin.com/company/expedition-games/",
+            "detailImage": "expeditionGamesLarge.jpg",
+            "levels": [
+                { "title": "Unity Systems Engineer Intern", "duration": "8 months", "weight": 1 }
+            ]
         }
     ]
 }

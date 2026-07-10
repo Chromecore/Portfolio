@@ -1,7 +1,6 @@
 import React from "react";
 import './Experience.css'
 import experiencedata from '../data/experience.json';
-import useTilt from '../useTilt.jsx';
 
 function Experiences()
 {
@@ -11,7 +10,7 @@ function Experiences()
             <div className='experienceList'>
                 {
                     experiencedata.experiences.map((experience) =>
-                        <Experience experience={experience} key={experience.name} />
+                        <Experience experience={experience} key={experience.id} />
                     )
                 }
             </div>
@@ -21,15 +20,64 @@ function Experiences()
 
 function Experience({ experience })
 {
-    const { ref, onMouseMove, onMouseLeave } = useTilt({ maxAngle: 12, perspective: 500, scale: 1.08 })
+    const { levels } = experience
+    const currentLevel = levels[levels.length - 1]
+    const totalWeight = levels.reduce((sum, level) => sum + (level.weight || 1), 0)
+    let cumulative = 0
+    const nodePositions = [0, ...levels.map((level) =>
+    {
+        cumulative += level.weight || 1
+        return (cumulative / totalWeight) * 100
+    })]
 
     return (
-        <a className="experience" ref={ref}
-            aria-label={`${experience.name} experience`} role="listitem"
-            href={experience.link} target="_blank" rel="noopener noreferrer"
-            onMouseMove={onMouseMove} onMouseLeave={onMouseLeave}>
-            <img src={`experience/${experience.id}.png`} aria-hidden="true" alt="" />
-            <p id={experience.name} aria-hidden="true">{experience.name}</p>
+        <a className="experience"
+            aria-label={`${experience.name} experience`}
+            href={experience.link} target="_blank" rel="noopener noreferrer">
+            <img
+                src={`experience/${experience.detailImage || `${experience.id}.png`}`}
+                className={experience.detailImage ? 'detailImage' : undefined}
+                aria-hidden="true" alt="" />
+            <div className="experienceInfo">
+                <p className="experienceName">{experience.name}</p>
+                {
+                    levels.length > 1 &&
+                    <p className="experiencePosition">{currentLevel.title}</p>
+                }
+                <div className="levelBar">
+                    <div className="levelTrack">
+                        {
+                            levels.map((level, index) => (
+                                <div className="levelSegment"
+                                    data-current={index === levels.length - 1}
+                                    style={{ flexGrow: level.weight || 1 }}
+                                    key={index} />
+                            ))
+                        }
+                    </div>
+                    {
+                        nodePositions.map((position, index) => (
+                            <div className="levelNode"
+                                data-current={index === nodePositions.length - 1}
+                                style={{ left: `${position}%` }}
+                                key={index} />
+                        ))
+                    }
+                </div>
+                <div className="levelLabels">
+                    {
+                        levels.map((level, index) => (
+                            <div className="levelLabel"
+                                data-current={index === levels.length - 1}
+                                style={{ flexGrow: level.weight || 1 }}
+                                key={index}>
+                                <span className="segmentTitle">{level.title}</span>
+                                <span className="segmentDuration">{level.duration}</span>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
         </a>
     );
 };

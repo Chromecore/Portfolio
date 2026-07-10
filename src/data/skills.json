@@ -37,6 +37,14 @@
                     "id": "csharp"
                 },
                 {
+                    "name": "IOS",
+                    "id": "ios"
+                },
+                {
+                    "name": "Android",
+                    "id": "android"
+                },
+                {
                     "name": "Game Design",
                     "id": "design"
                 },
@@ -47,14 +55,6 @@
                 {
                     "name": "Unity Netcode",
                     "id": "unity"
-                },
-                {
-                    "name": "GameMaker",
-                    "id": "gameMaker"
-                },
-                {
-                    "name": "Blender",
-                    "id": "blender"
                 }
             ]
         },
