@@ -1,15 +1,15 @@
 import React from "react";
 import './Projects.css'
 import projectdata from '../data/projects.json';
-import GamesIcon from '../assets/icons/games';
-import GeneralIcon from '../assets/icons/general';
-import OtherIcon from '../assets/icons/other';
+import ExperienceIcon from '../assets/icons/experience';
+import WorkIcon from '../assets/icons/work';
+import AboutIcon from '../assets/icons/about';
 import ProjectCard from "./ProjectCard";
 
 const iconMap = {
-    "Games": <GamesIcon />,
-    "Software": <GeneralIcon />,
-    "Other": <OtherIcon />,
+    "Work": <WorkIcon />,
+    "School": <ExperienceIcon />,
+    "Personal": <AboutIcon />,
 };
 
 function Projects()

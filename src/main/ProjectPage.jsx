@@ -1,9 +1,26 @@
+import { useState } from "react";
 import { useParams, Navigate, Link, useNavigate, useLocation } from "react-router-dom";
 import './ProjectPage.css'
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import ProjectCard from './ProjectCard.jsx'
 import projectdata from '../data/projects.json';
+
+const SCREENSHOT_EXTENSIONS = ['webp', 'jpg', 'png']
+
+function ScreenshotImage({ project, screenshot, index })
+{
+    const [extIndex, setExtIndex] = useState(0)
+
+    if (extIndex >= SCREENSHOT_EXTENSIONS.length) return null
+
+    return (
+        <img
+            src={`projects/${project.id}/screenshots/${screenshot}.${SCREENSHOT_EXTENSIONS[extIndex]}`}
+            alt={`Screenshot number ${index} of ${project.name}`}
+            onError={() => setExtIndex((i) => i + 1)} />
+    )
+}
 
 function ProjectPage()
 {
@@ -96,8 +113,8 @@ function ProjectPage()
                         {
                             project.screenshots.map((i, index) => (
                                 <div key={index}>
-                                    <img src={`projects/${project.id}/screenshots/${i}.jpg`}
-                                        alt={`Screenshot number ${index} of ${project.name}`} />
+                                    <ScreenshotImage project={project} screenshot={i} index={index}
+                                        key={`${project.id}-${i}`} />
                                 </div>
                             ))
                         }
