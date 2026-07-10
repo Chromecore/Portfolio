@@ -74,9 +74,6 @@ form {
             height: 0rem;
         }
 
-    }
-
-    .input:last-of-type {
         textarea {
             resize: vertical;
             height: 120px;
@@ -85,6 +82,7 @@ form {
             white-space: unset;
             overflow-y: unset;
         }
+
     }
 
     button {

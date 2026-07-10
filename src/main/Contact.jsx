@@ -3,7 +3,6 @@ import ItchIcon from '../assets/icons/itch'
 import MailIcon from '../assets/icons/mail'
 import LinkedInIcon from '../assets/icons/linkedIn'
 import GithubIcon from '../assets/icons/github'
-import baseUrl from '../BaseData'
 
 const socials = [
     { id: 1, name: "Itch", icon: <ItchIcon />, link: 'https://chromecore.itch.io/' },
@@ -18,14 +17,11 @@ function Contact({ success, error })
         <section className='contact reveal' id="contact">
             <h2 className='letsTalk'>Let's Talk!</h2>
             <div className='formSocials'>
-                <form action='https://submit-form.com/9HOvqSp8h'>
-                    <input type="hidden" name="_append" value="false" />
-                    <input type="hidden" name="_redirect" value={`${baseUrl}/success#contact`} />
-                    <input type="hidden" name="_error" value={`${baseUrl}/error#contact`} />
-
+                <form action='/contact' method='POST'>
                     <Input name='name' labelText='Name' type='text' />
                     <Input name='email' labelText='Email Address' type='email' />
                     <Input name='message' labelText='Message' type='text' textArea={true} />
+                    <div className='cf-turnstile' data-sitekey='0x4AAAAAADzTQorH4GSE1VIk'></div>
                     <button type='submit'>Send Message</button>
                     <p className='successful' hidden={success == undefined}>Successfully Sent</p>
                     <p className='error' hidden={error == undefined}>Error sending message</p>
