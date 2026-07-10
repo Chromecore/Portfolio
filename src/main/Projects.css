@@ -85,6 +85,8 @@
             display: flex;
             overflow-x: scroll;
             scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
 
             .project {
                 scroll-snap-align: center;
@@ -98,7 +100,7 @@
         }
 
         .projectList::-webkit-scrollbar {
-            margin-top: 200px;
+            display: none;
         }
     }
 }

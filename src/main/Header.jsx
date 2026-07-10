@@ -11,11 +11,11 @@ import ResumeIcon from '../assets/icons/resume'
 function Header()
 {
   const navItems = [
-    { name: 'About', icon: <AboutIcon />, link: '#about' },
-    { name: 'Skills', icon: <SkillsIcon />, link: '#skills' },
-    { name: 'Experience', icon: <ExperienceIcon />, link: '#experience' },
-    { name: 'Projects', icon: <ProjectsIcon />, link: '#projects' },
-    { name: 'Contact', icon: <MailIcon />, link: '#contact' },
+    { name: 'About', icon: <AboutIcon />, link: '/#about' },
+    { name: 'Skills', icon: <SkillsIcon />, link: '/#skills' },
+    { name: 'Experience', icon: <ExperienceIcon />, link: '/#experience' },
+    { name: 'Projects', icon: <ProjectsIcon />, link: '/#projects' },
+    { name: 'Contact', icon: <MailIcon />, link: '/#contact' },
     { name: 'Resume', icon: <ResumeIcon />, target: '_blank', link: 'https://drive.google.com/file/d/1AmegWO79QVZejVwYmzNuLmxkF4PsZZrg/view?usp=drive_link' }
   ]
 
